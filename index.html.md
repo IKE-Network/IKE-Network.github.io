@@ -28,12 +28,25 @@ The Integrated Knowledge Environment (IKE) is a community-driven platform for kn
 
 ## [#null_2](#null_2)null
 
-| Version | 164 |
+| Version | 44 |
 | --- | --- |
-| Site | [ike.network/ike-tooling](https://ike.network/ike-tooling/)[3] |
-| GitHub | [IKE-Network/ike-tooling](https://github.com/IKE-Network/ike-tooling)[4] |
+| Site | [ike.network/ike-platform](https://ike.network/ike-platform/)[3] |
+| GitHub | [IKE-Network/ike-platform](https://github.com/IKE-Network/ike-platform)[4] |
 
 #### [#modules_2](#modules_2)Modules
+
+- ike-parent
+- ike-workspace-maven-plugin
+- ike-bom
+
+## [#null_3](#null_3)null
+
+| Version | 164 |
+| --- | --- |
+| Site | [ike.network/ike-tooling](https://ike.network/ike-tooling/)[5] |
+| GitHub | [IKE-Network/ike-tooling](https://github.com/IKE-Network/ike-tooling)[6] |
+
+#### [#modules_3](#modules_3)Modules
 
 - ike-build-standards
 - ike-workspace-model
