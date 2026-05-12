@@ -41,7 +41,7 @@ The Integrated Knowledge Environment (IKE) is a community-driven platform for kn
 
 ## [#ike-tooling](#ike-tooling)IKE Tooling
 
-Build tooling for IKE Network projects
+Workspace management, release orchestration, gitflow workflows, and build-time utilities for IKE Network projects.
 
 | Version | 165 |
 | --- | --- |
