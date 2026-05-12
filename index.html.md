@@ -12,7 +12,7 @@ The Integrated Knowledge Environment (IKE) is a community-driven platform for kn
 
 ## [#null](#null)null
 
-| Version | 22 |
+| Version | 23 |
 | --- | --- |
 | Site | [ike.network/ike-docs](https://ike.network/ike-docs/)[1] |
 | GitHub | [IKE-Network/ike-docs](https://github.com/IKE-Network/ike-docs)[2] |
