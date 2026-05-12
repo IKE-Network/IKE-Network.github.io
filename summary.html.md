@@ -1,6 +1,6 @@
 ---
-date_published: 1980-01-31
-date_modified: 1980-01-31
+date_published: 2026-05-10
+date_modified: 2026-05-10
 canonical_url: https://ike.network/summary.html
 ---
 
@@ -11,14 +11,14 @@ canonical_url: https://ike.network/summary.html
 | Field | Value |
 | --- | --- |
 | Name | IKE Network |
-| Description | Organization landing page for IKE Community projects. |
+| Description | Organization landing page for IKE Network projects. |
 | Homepage | [https://ike.network](https://ike.network)[1] |
 
 ## [Project Organization](#project-organization)
 
 | Field | Value |
 | --- | --- |
-| Name | IKE Community |
+| Name | IKE Network |
 | URL | [https://ike.network](https://ike.network)[1] |
 
 ## [Build Information](#build-information)

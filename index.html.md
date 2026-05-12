@@ -1,6 +1,6 @@
 ---
-date_published: 1980-01-31
-date_modified: 1980-01-31
+date_published: 2026-05-10
+date_modified: 2026-05-10
 canonical_url: https://ike.network/index.html
 ---
 
@@ -18,7 +18,7 @@ The IKE ecosystem is split into three layers — a tooling layer that provides t
 
 | Project | Description |
 | --- | --- |
-| **IKE Tooling** [Repository](https://github.com/IKE-Network/ike-tooling)[3]  ·  [Generated Site](https://ike.network/ike-tooling/)[4] | Workspace management, release orchestration, build standards, and Maven plugins for IKE Community projects. Ships `ike-maven-plugin` (the `ike:*` goals — release prepare, BOM generation, site deploy, version upgrade), `ike-build-standards` (versioned Claude instruction files and build-config ZIPs), and related artifacts. First link in the release cascade. |
+| **IKE Tooling** [Repository](https://github.com/IKE-Network/ike-tooling)[3]  ·  [Generated Site](https://ike.network/ike-tooling/)[4] | Workspace management, release orchestration, build standards, and Maven plugins for IKE Network projects. Ships `ike-maven-plugin` (the `ike:*` goals — release prepare, BOM generation, site deploy, version upgrade), `ike-build-standards` (versioned Claude instruction files and build-config ZIPs), and related artifacts. First link in the release cascade. |
 | **IKE Docs** [Repository](https://github.com/IKE-Network/ike-docs)[5]  ·  [Generated Site](https://ike.network/ike-docs/)[6] | The AsciiDoc documentation plumbing — `ike-doc-maven-plugin` (the `idoc:*` goals and the `ike-doc` custom packaging), `koncept-asciidoc-extension`, `minimal-fonts`, `docbook-xsl`, `ike-doc-resources`, and `semantic-linebreak`. Provides the multi-renderer HTML+PDF pipeline used by every IKE project that publishes documentation. |
 
 ### [#layer-2--platform](#layer-2--platform)Layer 2 — Platform
@@ -78,4 +78,4 @@ For workspace operations across multiple IKE repositories, see the [ws:* Goal Re
 | GitHub organization | [https://github.com/IKE-Network](https://github.com/IKE-Network)[1] |
 | Cross-project issue tracker | [https://github.com/IKE-Network/ike-issues](https://github.com/IKE-Network/ike-issues)[18] |
 | Nexus artifact repository | [https://nexus.tinkar.org](https://nexus.tinkar.org)[19] |
-| IKE Community | [https://ike.network](https://ike.network)[20] |
+| IKE Network landing | [https://ike.network](https://ike.network)[20] |

@@ -1,6 +1,6 @@
 # IKE Network
 
-> Organization landing page for IKE Community projects.
+> Organization landing page for IKE Network projects.
 
 ## IKE Network
 
