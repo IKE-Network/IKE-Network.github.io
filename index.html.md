@@ -14,7 +14,7 @@ The Integrated Knowledge Environment (IKE) is a community-driven platform for kn
 
 Documentation plumbing for the IKE Network. Hosts the ike-doc-maven-plugin (ike-doc packaging, AsciiDoc/render pipeline, PDF dispatch), the Koncept AsciiDoc extension, DocBook XSL + fonts, shared doc resources, and the semantic linebreak reformatter. Split from ike-pipeline to resolve the extensions=true reactor-load cycle. See IKE-Network/ike-issues#216.
 
-| Version | 22 |
+| Version | 23 |
 | --- | --- |
 | Site | [ike.network/ike-docs](https://ike.network/ike-docs/)[1] |
 | GitHub | [IKE-Network/ike-docs](https://github.com/IKE-Network/ike-docs)[2] |
