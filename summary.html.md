@@ -27,5 +27,5 @@ canonical_url: https://ike.network/summary.html
 | --- | --- |
 | GroupId | network.ike |
 | ArtifactId | ike-network-site |
-| Version | 1 |
+| Version | 2 |
 | Type | pom |
