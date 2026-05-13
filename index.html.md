@@ -6,7 +6,7 @@ canonical_url: https://ike.network/index.html
 
 # IKE Network
 
-The Integrated Knowledge Environment (IKE) is a community-driven platform for knowledge engineering.
+The IKE Network (Integrated Knowledge Exchange) is a sociotechnical fabric where knowledge compounds.
 
 ## [#projects](#projects)Projects
 
@@ -87,7 +87,7 @@ Consumer-facing parent POM, BOM, and workspace management plugin for the IKE Net
 
 Workspace management, release orchestration, gitflow workflows, and build-time utilities for IKE Network projects.
 
-| Version | 166 |
+| Version | 167 |
 | --- | --- |
 | Site | [ike.network/ike-tooling](https://ike.network/ike-tooling/)[13] |
 | GitHub | [IKE-Network/ike-tooling](https://github.com/IKE-Network/ike-tooling)[14] |
