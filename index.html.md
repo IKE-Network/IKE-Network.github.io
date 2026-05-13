@@ -50,7 +50,7 @@ Documentation plumbing for the IKE Network. Hosts the ike-doc-maven-plugin (ike-
 
 End-to-end smoke tests that exercise the IKE Network release cascade as external consumers would. Each IT case clones the intended usage pattern (doc-only project, java + docs, BOM import, ws:create scaffold) in a fresh Maven environment and asserts that the build succeeds and produces the expected artifacts.
 
-| Version | 12 |
+| Version | 13 |
 | --- | --- |
 | Site | [ike.network/ike-example-its](https://ike.network/ike-example-its/)[7] |
 | GitHub | [IKE-Network/ike-example-its](https://github.com/IKE-Network/ike-example-its)[8] |
