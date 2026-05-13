@@ -87,7 +87,7 @@ Consumer-facing parent POM, BOM, and workspace management plugin for the IKE Net
 
 Workspace management, release orchestration, gitflow workflows, and build-time utilities for IKE Network projects.
 
-| Version | 171 |
+| Version | 172 |
 | --- | --- |
 | Site | [ike.network/ike-tooling](https://ike.network/ike-tooling/)[13] |
 | GitHub | [IKE-Network/ike-tooling](https://github.com/IKE-Network/ike-tooling)[14] |
