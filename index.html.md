@@ -57,7 +57,7 @@ End-to-end smoke tests that exercise the IKE Network release cascade as external
 
 ## [#ike-example-workspace](#ike-example-workspace)IKE Example Workspace
 
-| Version | 15 |
+| Version | 16 |
 | --- | --- |
 | Site | [ike.network/ike-example-ws](https://ike.network/ike-example-ws/)[9] |
 | GitHub | [IKE-Network/ike-example-ws](https://github.com/IKE-Network/ike-example-ws)[10] |
