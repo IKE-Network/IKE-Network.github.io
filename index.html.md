@@ -55,16 +55,29 @@ End-to-end smoke tests that exercise the IKE Network release cascade as external
 | Site | [ike.network/ike-example-its](https://ike.network/ike-example-its/)[7] |
 | GitHub | [IKE-Network/ike-example-its](https://github.com/IKE-Network/ike-example-its)[8] |
 
+## [#ike-example-workspace](#ike-example-workspace)IKE Example Workspace
+
+| Version | 11 |
+| --- | --- |
+| Site | [ike.network/ike-example-ws](https://ike.network/ike-example-ws/)[9] |
+| GitHub | [IKE-Network/ike-example-ws](https://github.com/IKE-Network/ike-example-ws)[10] |
+
+#### [#modules_2](#modules_2)Modules
+
+- doc-example
+- example-project
+- its
+
 ## [#ike-platform](#ike-platform)IKE Platform
 
 Consumer-facing parent POM, BOM, and workspace management plugin for the IKE Network. External doc and code projects inherit from ike-parent (declared here); cross-repo workspace operations use ike-workspace-maven-plugin (ws:* goals). Consumes ike-docs as an external artifact — ike-parent declares ike-doc-maven-plugin with extensions=true, resolving from Nexus at project-load time. Split from the archived ike-pipeline; see IKE-Network/ike-issues#216.
 
 | Version | 48 |
 | --- | --- |
-| Site | [ike.network/ike-platform](https://ike.network/ike-platform/)[9] |
-| GitHub | [IKE-Network/ike-platform](https://github.com/IKE-Network/ike-platform)[10] |
+| Site | [ike.network/ike-platform](https://ike.network/ike-platform/)[11] |
+| GitHub | [IKE-Network/ike-platform](https://github.com/IKE-Network/ike-platform)[12] |
 
-#### [#modules_2](#modules_2)Modules
+#### [#modules_3](#modules_3)Modules
 
 - ike-parent
 - ike-workspace-maven-plugin
@@ -76,10 +89,10 @@ Workspace management, release orchestration, gitflow workflows, and build-time u
 
 | Version | 166 |
 | --- | --- |
-| Site | [ike.network/ike-tooling](https://ike.network/ike-tooling/)[11] |
-| GitHub | [IKE-Network/ike-tooling](https://github.com/IKE-Network/ike-tooling)[12] |
+| Site | [ike.network/ike-tooling](https://ike.network/ike-tooling/)[13] |
+| GitHub | [IKE-Network/ike-tooling](https://github.com/IKE-Network/ike-tooling)[14] |
 
-#### [#modules_3](#modules_3)Modules
+#### [#modules_4](#modules_4)Modules
 
 - ike-build-standards
 - ike-workspace-model
