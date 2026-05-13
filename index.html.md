@@ -23,7 +23,7 @@ Documentation-only project demonstrating the IKE AsciiDoc pipeline. Exercises al
 
 Example Java project demonstrating IKE documentation pipeline integration with Java source, tests, and Koncept macros.
 
-| Version | 26 |
+| Version | 27 |
 | --- | --- |
 | Site | [ike.network/example-project](https://ike.network/example-project/)[3] |
 | GitHub | [IKE-Network/example-project](https://github.com/IKE-Network/example-project)[4] |
