@@ -307,6 +307,26 @@
  </div>
 </div>
 <div>
+ <h2 id="ike-example-integration-test-harness"><a href="#ike-example-integration-test-harness"></a><a id="ike-example-integration-test-harness"></a>IKE Example Integration Test Harness</h2>
+ <p>End-to-end smoke tests that exercise the IKE Network release cascade as external consumers would. Each IT case clones the intended usage pattern (doc-only project, java + docs, BOM import, ws:create scaffold) in a fresh Maven environment and asserts that the build succeeds and produces the expected artifacts.</p>
+ <table class="bodyTable table table-striped table-hover" style="background: #FFFFFF">
+  <tbody>
+   <tr class="a">
+    <td style="text-align: left;">Version</td>
+    <td>12</td>
+   </tr>
+   <tr class="b">
+    <td style="text-align: left;">Site</td>
+    <td><a href="https://ike.network/ike-example-its/">ike.network/ike-example-its</a><sup class="visible-print-inline">[7]</sup></td>
+   </tr>
+   <tr class="a">
+    <td style="text-align: left;">GitHub</td>
+    <td><a href="https://github.com/IKE-Network/ike-example-its" class="externalLink">IKE-Network/ike-example-its</a><sup class="visible-print-inline">[8]</sup></td>
+   </tr>
+  </tbody>
+ </table>
+</div>
+<div>
  <h2 id="ike-platform"><a href="#ike-platform"></a><a id="ike-platform"></a>IKE Platform</h2>
  <p>Consumer-facing parent POM, BOM, and workspace management plugin for the IKE Network. External doc and code projects inherit from ike-parent (declared here); cross-repo workspace operations use ike-workspace-maven-plugin (ws:* goals). Consumes ike-docs as an external artifact — ike-parent declares ike-doc-maven-plugin with extensions=true, resolving from Nexus at project-load time. Split from the archived ike-pipeline; see IKE-Network/ike-issues#216.</p>
  <table class="bodyTable table table-striped table-hover" style="background: #FFFFFF">
@@ -317,11 +337,11 @@
    </tr>
    <tr class="b">
     <td style="text-align: left;">Site</td>
-    <td><a href="https://ike.network/ike-platform/">ike.network/ike-platform</a><sup class="visible-print-inline">[7]</sup></td>
+    <td><a href="https://ike.network/ike-platform/">ike.network/ike-platform</a><sup class="visible-print-inline">[9]</sup></td>
    </tr>
    <tr class="a">
     <td style="text-align: left;">GitHub</td>
-    <td><a href="https://github.com/IKE-Network/ike-platform" class="externalLink">IKE-Network/ike-platform</a><sup class="visible-print-inline">[8]</sup></td>
+    <td><a href="https://github.com/IKE-Network/ike-platform" class="externalLink">IKE-Network/ike-platform</a><sup class="visible-print-inline">[10]</sup></td>
    </tr>
   </tbody>
  </table>
@@ -345,11 +365,11 @@
    </tr>
    <tr class="b">
     <td style="text-align: left;">Site</td>
-    <td><a href="https://ike.network/ike-tooling/">ike.network/ike-tooling</a><sup class="visible-print-inline">[9]</sup></td>
+    <td><a href="https://ike.network/ike-tooling/">ike.network/ike-tooling</a><sup class="visible-print-inline">[11]</sup></td>
    </tr>
    <tr class="a">
     <td style="text-align: left;">GitHub</td>
-    <td><a href="https://github.com/IKE-Network/ike-tooling" class="externalLink">IKE-Network/ike-tooling</a><sup class="visible-print-inline">[10]</sup></td>
+    <td><a href="https://github.com/IKE-Network/ike-tooling" class="externalLink">IKE-Network/ike-tooling</a><sup class="visible-print-inline">[12]</sup></td>
    </tr>
   </tbody>
  </table>
@@ -386,13 +406,15 @@
 								<li>[4] https://github.com/IKE-Network/example-project</li>
 								<li>[5] https://ike.network/ike-docs/</li>
 								<li>[6] https://github.com/IKE-Network/ike-docs</li>
-								<li>[7] https://ike.network/ike-platform/</li>
-								<li>[8] https://github.com/IKE-Network/ike-platform</li>
-								<li>[9] https://ike.network/ike-tooling/</li>
-								<li>[10] https://github.com/IKE-Network/ike-tooling</li>
+								<li>[7] https://ike.network/ike-example-its/</li>
+								<li>[8] https://github.com/IKE-Network/ike-example-its</li>
+								<li>[9] https://ike.network/ike-platform/</li>
+								<li>[10] https://github.com/IKE-Network/ike-platform</li>
+								<li>[11] https://ike.network/ike-tooling/</li>
+								<li>[12] https://github.com/IKE-Network/ike-tooling</li>
 								</ul>
 							</div>
-<div class="date">Date: <strong>2026-05-12 18:12:49 -0700</strong></div>
+<div class="date">Date: <strong>2026-05-12 18:14:10 -0700</strong></div>
 						</div>
 						</div>
 					</div>

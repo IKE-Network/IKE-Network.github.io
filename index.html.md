@@ -46,14 +46,23 @@ Documentation plumbing for the IKE Network. Hosts the ike-doc-maven-plugin (ike-
 - ike-doc-maven-plugin
 - semantic-linebreak
 
+## [#ike-example-integration-test-harness](#ike-example-integration-test-harness)IKE Example Integration Test Harness
+
+End-to-end smoke tests that exercise the IKE Network release cascade as external consumers would. Each IT case clones the intended usage pattern (doc-only project, java + docs, BOM import, ws:create scaffold) in a fresh Maven environment and asserts that the build succeeds and produces the expected artifacts.
+
+| Version | 12 |
+| --- | --- |
+| Site | [ike.network/ike-example-its](https://ike.network/ike-example-its/)[7] |
+| GitHub | [IKE-Network/ike-example-its](https://github.com/IKE-Network/ike-example-its)[8] |
+
 ## [#ike-platform](#ike-platform)IKE Platform
 
 Consumer-facing parent POM, BOM, and workspace management plugin for the IKE Network. External doc and code projects inherit from ike-parent (declared here); cross-repo workspace operations use ike-workspace-maven-plugin (ws:* goals). Consumes ike-docs as an external artifact — ike-parent declares ike-doc-maven-plugin with extensions=true, resolving from Nexus at project-load time. Split from the archived ike-pipeline; see IKE-Network/ike-issues#216.
 
 | Version | 48 |
 | --- | --- |
-| Site | [ike.network/ike-platform](https://ike.network/ike-platform/)[7] |
-| GitHub | [IKE-Network/ike-platform](https://github.com/IKE-Network/ike-platform)[8] |
+| Site | [ike.network/ike-platform](https://ike.network/ike-platform/)[9] |
+| GitHub | [IKE-Network/ike-platform](https://github.com/IKE-Network/ike-platform)[10] |
 
 #### [#modules_2](#modules_2)Modules
 
@@ -67,8 +76,8 @@ Workspace management, release orchestration, gitflow workflows, and build-time u
 
 | Version | 166 |
 | --- | --- |
-| Site | [ike.network/ike-tooling](https://ike.network/ike-tooling/)[9] |
-| GitHub | [IKE-Network/ike-tooling](https://github.com/IKE-Network/ike-tooling)[10] |
+| Site | [ike.network/ike-tooling](https://ike.network/ike-tooling/)[11] |
+| GitHub | [IKE-Network/ike-tooling](https://github.com/IKE-Network/ike-tooling)[12] |
 
 #### [#modules_3](#modules_3)Modules
 
