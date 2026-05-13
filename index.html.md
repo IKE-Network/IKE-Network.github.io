@@ -10,14 +10,23 @@ The Integrated Knowledge Environment (IKE) is a community-driven platform for kn
 
 ## [#projects](#projects)Projects
 
+## [#ike-documentation-example](#ike-documentation-example)IKE Documentation Example
+
+Documentation-only project demonstrating the IKE AsciiDoc pipeline. Exercises all diagram types, Koncept macros, typography, and layout features across all 6 PDF renderers.
+
+| Version | 20 |
+| --- | --- |
+| Site | [ike.network/doc-example](https://ike.network/doc-example/)[1] |
+| GitHub | [IKE-Network/doc-example](https://github.com/IKE-Network/doc-example)[2] |
+
 ## [#ike-docs](#ike-docs)IKE Docs
 
 Documentation plumbing for the IKE Network. Hosts the ike-doc-maven-plugin (ike-doc packaging, AsciiDoc/render pipeline, PDF dispatch), the Koncept AsciiDoc extension, DocBook XSL + fonts, shared doc resources, and the semantic linebreak reformatter. Split from ike-pipeline to resolve the extensions=true reactor-load cycle. See IKE-Network/ike-issues#216.
 
 | Version | 24 |
 | --- | --- |
-| Site | [ike.network/ike-docs](https://ike.network/ike-docs/)[1] |
-| GitHub | [IKE-Network/ike-docs](https://github.com/IKE-Network/ike-docs)[2] |
+| Site | [ike.network/ike-docs](https://ike.network/ike-docs/)[3] |
+| GitHub | [IKE-Network/ike-docs](https://github.com/IKE-Network/ike-docs)[4] |
 
 #### [#modules](#modules)Modules
 
@@ -34,8 +43,8 @@ Consumer-facing parent POM, BOM, and workspace management plugin for the IKE Net
 
 | Version | 48 |
 | --- | --- |
-| Site | [ike.network/ike-platform](https://ike.network/ike-platform/)[3] |
-| GitHub | [IKE-Network/ike-platform](https://github.com/IKE-Network/ike-platform)[4] |
+| Site | [ike.network/ike-platform](https://ike.network/ike-platform/)[5] |
+| GitHub | [IKE-Network/ike-platform](https://github.com/IKE-Network/ike-platform)[6] |
 
 #### [#modules_2](#modules_2)Modules
 
@@ -49,8 +58,8 @@ Workspace management, release orchestration, gitflow workflows, and build-time u
 
 | Version | 166 |
 | --- | --- |
-| Site | [ike.network/ike-tooling](https://ike.network/ike-tooling/)[5] |
-| GitHub | [IKE-Network/ike-tooling](https://github.com/IKE-Network/ike-tooling)[6] |
+| Site | [ike.network/ike-tooling](https://ike.network/ike-tooling/)[7] |
+| GitHub | [IKE-Network/ike-tooling](https://github.com/IKE-Network/ike-tooling)[8] |
 
 #### [#modules_3](#modules_3)Modules
 
