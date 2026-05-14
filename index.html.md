@@ -14,7 +14,7 @@ The IKE Network (Integrated Knowledge Exchange) is a sociotechnical fabric where
 
 Documentation-only project demonstrating the IKE AsciiDoc pipeline. Exercises all diagram types, Koncept macros, typography, and layout features across all 6 PDF renderers.
 
-| Version | 28 |
+| Version | 29 |
 | --- | --- |
 | Site | [ike.network/doc-example](https://ike.network/doc-example/)[1] |
 | GitHub | [IKE-Network/doc-example](https://github.com/IKE-Network/doc-example)[2] |
