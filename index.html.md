@@ -63,12 +63,14 @@ Documentation plumbing for the IKE Network. Hosts the ike-doc-maven-plugin (ike-
 
 ## [#ike-platform](#ike-platform)IKE Platform
 
+[https://central.sonatype.com/artifact/network.ike.platform/ike-platform](https://central.sonatype.com/artifact/network.ike.platform/ike-platform)[10]
+
 Consumer-facing parent POM, BOM, and workspace management plugin for the IKE Network. External doc and code projects inherit from ike-parent (declared here); cross-repo workspace operations use ike-workspace-maven-plugin (ws:* goals). Consumes ike-docs as an external artifact — ike-parent declares ike-doc-maven-plugin with extensions=true, resolving from Nexus at project-load time. Split from the archived ike-pipeline; see IKE-Network/ike-issues#216.
 
 | Version | 72 |
 | --- | --- |
-| Site | [ike.network/ike-platform](https://ike.network/ike-platform/)[10] |
-| GitHub | [IKE-Network/ike-platform](https://github.com/IKE-Network/ike-platform)[11] |
+| Site | [ike.network/ike-platform](https://ike.network/ike-platform/)[11] |
+| GitHub | [IKE-Network/ike-platform](https://github.com/IKE-Network/ike-platform)[12] |
 
 #### [#modules_3](#modules_3)Modules
 
@@ -86,8 +88,8 @@ Documentation-only project demonstrating the IKE AsciiDoc pipeline. Exercises al
 
 | Version | 30 |
 | --- | --- |
-| Site | [ike.network/doc-example](https://ike.network/doc-example/)[12] |
-| GitHub | [IKE-Network/doc-example](https://github.com/IKE-Network/doc-example)[13] |
+| Site | [ike.network/doc-example](https://ike.network/doc-example/)[13] |
+| GitHub | [IKE-Network/doc-example](https://github.com/IKE-Network/doc-example)[14] |
 
 ## [#ike-example-project](#ike-example-project)IKE Example Project
 
@@ -95,8 +97,8 @@ Example Java project demonstrating IKE documentation pipeline integration with J
 
 | Version | 30 |
 | --- | --- |
-| Site | [ike.network/example-project](https://ike.network/example-project/)[14] |
-| GitHub | [IKE-Network/example-project](https://github.com/IKE-Network/example-project)[15] |
+| Site | [ike.network/example-project](https://ike.network/example-project/)[15] |
+| GitHub | [IKE-Network/example-project](https://github.com/IKE-Network/example-project)[16] |
 
 ## [#ike-example-integration-test-harness](#ike-example-integration-test-harness)IKE Example Integration Test Harness
 
@@ -104,15 +106,15 @@ End-to-end smoke tests that exercise the IKE Network release cascade as external
 
 | Version | 22 |
 | --- | --- |
-| Site | [ike.network/ike-example-its](https://ike.network/ike-example-its/)[16] |
-| GitHub | [IKE-Network/ike-example-its](https://github.com/IKE-Network/ike-example-its)[17] |
+| Site | [ike.network/ike-example-its](https://ike.network/ike-example-its/)[17] |
+| GitHub | [IKE-Network/ike-example-its](https://github.com/IKE-Network/ike-example-its)[18] |
 
 ## [#ike-example-workspace](#ike-example-workspace)IKE Example Workspace
 
 | Version | 21 |
 | --- | --- |
-| Site | [ike.network/ike-example-ws](https://ike.network/ike-example-ws/)[18] |
-| GitHub | [IKE-Network/ike-example-ws](https://github.com/IKE-Network/ike-example-ws)[19] |
+| Site | [ike.network/ike-example-ws](https://ike.network/ike-example-ws/)[19] |
+| GitHub | [IKE-Network/ike-example-ws](https://github.com/IKE-Network/ike-example-ws)[20] |
 
 #### [#modules_4](#modules_4)Modules
 
