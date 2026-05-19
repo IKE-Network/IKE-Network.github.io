@@ -81,14 +81,12 @@ End-to-end smoke tests that exercise the IKE Network release cascade as external
 
 ## [#ike-platform](#ike-platform)IKE Platform
 
-[https://central.sonatype.com/artifact/network.ike.platform/ike-platform](https://central.sonatype.com/artifact/network.ike.platform/ike-platform)[14]
-
 Consumer-facing parent POM, BOM, and workspace management plugin for the IKE Network. External doc and code projects inherit from ike-parent (declared here); cross-repo workspace operations use ike-workspace-maven-plugin (ws:* goals). Consumes ike-docs as an external artifact — ike-parent declares ike-doc-maven-plugin with extensions=true, resolving from Nexus at project-load time. Split from the archived ike-pipeline; see IKE-Network/ike-issues#216.
 
-| Version | 72 |
+| Version | 73 |
 | --- | --- |
-| Site | [ike.network/ike-platform](https://ike.network/ike-platform/)[15] |
-| GitHub | [IKE-Network/ike-platform](https://github.com/IKE-Network/ike-platform)[16] |
+| Site | [ike.network/ike-platform](https://ike.network/ike-platform/)[14] |
+| GitHub | [IKE-Network/ike-platform](https://github.com/IKE-Network/ike-platform)[15] |
 
 #### [#modules_3](#modules_3)Modules
 
@@ -98,14 +96,14 @@ Consumer-facing parent POM, BOM, and workspace management plugin for the IKE Net
 
 ## [#ike-tooling](#ike-tooling)IKE Tooling
 
-[https://central.sonatype.com/artifact/network.ike.tooling/ike-tooling](https://central.sonatype.com/artifact/network.ike.tooling/ike-tooling)[17]
+[https://central.sonatype.com/artifact/network.ike.tooling/ike-tooling](https://central.sonatype.com/artifact/network.ike.tooling/ike-tooling)[16]
 
 Workspace management, release orchestration, gitflow workflows, and build-time utilities for IKE Network projects.
 
 | Version | 188 |
 | --- | --- |
-| Site | [ike.network/ike-tooling](https://ike.network/ike-tooling/)[18] |
-| GitHub | [IKE-Network/ike-tooling](https://github.com/IKE-Network/ike-tooling)[19] |
+| Site | [ike.network/ike-tooling](https://ike.network/ike-tooling/)[17] |
+| GitHub | [IKE-Network/ike-tooling](https://github.com/IKE-Network/ike-tooling)[18] |
 
 #### [#modules_4](#modules_4)Modules
 
