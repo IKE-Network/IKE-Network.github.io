@@ -233,7 +233,121 @@
 <h1 id="ike-network">IKE Network</h1>
 <p>The IKE Network (Integrated Knowledge Exchange) is a sociotechnical fabric where knowledge compounds.</p>
 <div>
- <h2 id="projects"><a href="#projects"></a><a id="projects"></a>Projects</h2>
+ <h2 id="foundation"><a href="#foundation"></a><a id="foundation"></a>Foundation</h2>
+ <p>The IKE foundation — published to Maven Central and inheritable by any project. Each layer builds on the one above it.</p>
+</div>
+<div>
+ <h2 id="ike-base-parent"><a href="#ike-base-parent"></a><a id="ike-base-parent"></a>IKE Base Parent</h2>
+ <p><span class="image"><a class="image externalLink" href="https://central.sonatype.com/artifact/network.ike/ike-base-parent"><img src="https://img.shields.io/maven-central/v/network.ike/ike-base-parent" alt="Maven Central"></a><sup class="visible-print-inline">[1]</sup></span></p>
+ <p>Tier 0 foundation parent for the IKE Network — the apex of the parent inheritance forest, inherited by ike-tooling, ike-docs, and ike-platform. Carries shared publishing metadata, GPG signing, and Maven Central publishing configuration.</p>
+ <table class="bodyTable table table-striped table-hover" style="background: #FFFFFF">
+  <tbody>
+   <tr class="a">
+    <td style="text-align: left;">Version</td>
+    <td>1</td>
+   </tr>
+   <tr class="b">
+    <td style="text-align: left;">Site</td>
+    <td><a href="https://ike.network/ike-base-parent/">ike.network/ike-base-parent</a><sup class="visible-print-inline">[2]</sup></td>
+   </tr>
+   <tr class="a">
+    <td style="text-align: left;">GitHub</td>
+    <td><a href="https://github.com/IKE-Network/ike-base-parent" class="externalLink">IKE-Network/ike-base-parent</a><sup class="visible-print-inline">[3]</sup></td>
+   </tr>
+  </tbody>
+ </table>
+</div>
+<div>
+ <h2 id="ike-tooling"><a href="#ike-tooling"></a><a id="ike-tooling"></a>IKE Tooling</h2>
+ <p>Workspace management, release orchestration, gitflow workflows, and build-time utilities for IKE Network projects.</p>
+ <table class="bodyTable table table-striped table-hover" style="background: #FFFFFF">
+  <tbody>
+   <tr class="a">
+    <td style="text-align: left;">Version</td>
+    <td>188</td>
+   </tr>
+   <tr class="b">
+    <td style="text-align: left;">Site</td>
+    <td><a href="https://ike.network/ike-tooling/">ike.network/ike-tooling</a><sup class="visible-print-inline">[4]</sup></td>
+   </tr>
+   <tr class="a">
+    <td style="text-align: left;">GitHub</td>
+    <td><a href="https://github.com/IKE-Network/ike-tooling" class="externalLink">IKE-Network/ike-tooling</a><sup class="visible-print-inline">[5]</sup></td>
+   </tr>
+  </tbody>
+ </table>
+ <div>
+  <h4 id="modules"><a href="#modules"></a><a id="modules"></a>Modules</h4>
+  <ul>
+   <li>ike-build-standards</li>
+   <li>ike-workspace-model</li>
+   <li>ike-maven-plugin-support</li>
+   <li>ike-maven-plugin</li>
+  </ul>
+ </div>
+</div>
+<div>
+ <h2 id="ike-docs"><a href="#ike-docs"></a><a id="ike-docs"></a>IKE Docs</h2>
+ <p>Documentation plumbing for the IKE Network. Hosts the ike-doc-maven-plugin (ike-doc packaging, AsciiDoc/render pipeline, PDF dispatch), the Koncept AsciiDoc extension, DocBook XSL + fonts, shared doc resources, and the semantic linebreak reformatter. Split from ike-pipeline to resolve the extensions=true reactor-load cycle. See IKE-Network/ike-issues#216.</p>
+ <table class="bodyTable table table-striped table-hover" style="background: #FFFFFF">
+  <tbody>
+   <tr class="a">
+    <td style="text-align: left;">Version</td>
+    <td>44</td>
+   </tr>
+   <tr class="b">
+    <td style="text-align: left;">Site</td>
+    <td><a href="https://ike.network/ike-docs/">ike.network/ike-docs</a><sup class="visible-print-inline">[6]</sup></td>
+   </tr>
+   <tr class="a">
+    <td style="text-align: left;">GitHub</td>
+    <td><a href="https://github.com/IKE-Network/ike-docs" class="externalLink">IKE-Network/ike-docs</a><sup class="visible-print-inline">[7]</sup></td>
+   </tr>
+  </tbody>
+ </table>
+ <div>
+  <h4 id="modules_2"><a href="#modules_2"></a><a id="modules-2"></a>Modules</h4>
+  <ul>
+   <li>ike-doc-resources</li>
+   <li>minimal-fonts</li>
+   <li>docbook-xsl</li>
+   <li>koncept-asciidoc-extension</li>
+   <li>ike-doc-maven-plugin</li>
+   <li>semantic-linebreak</li>
+  </ul>
+ </div>
+</div>
+<div>
+ <h2 id="ike-platform"><a href="#ike-platform"></a><a id="ike-platform"></a>IKE Platform</h2>
+ <p>Consumer-facing parent POM, BOM, and workspace management plugin for the IKE Network. External doc and code projects inherit from ike-parent (declared here); cross-repo workspace operations use ike-workspace-maven-plugin (ws:* goals). Consumes ike-docs as an external artifact — ike-parent declares ike-doc-maven-plugin with extensions=true, resolving from Nexus at project-load time. Split from the archived ike-pipeline; see IKE-Network/ike-issues#216.</p>
+ <table class="bodyTable table table-striped table-hover" style="background: #FFFFFF">
+  <tbody>
+   <tr class="a">
+    <td style="text-align: left;">Version</td>
+    <td>72</td>
+   </tr>
+   <tr class="b">
+    <td style="text-align: left;">Site</td>
+    <td><a href="https://ike.network/ike-platform/">ike.network/ike-platform</a><sup class="visible-print-inline">[8]</sup></td>
+   </tr>
+   <tr class="a">
+    <td style="text-align: left;">GitHub</td>
+    <td><a href="https://github.com/IKE-Network/ike-platform" class="externalLink">IKE-Network/ike-platform</a><sup class="visible-print-inline">[9]</sup></td>
+   </tr>
+  </tbody>
+ </table>
+ <div>
+  <h4 id="modules_3"><a href="#modules_3"></a><a id="modules-3"></a>Modules</h4>
+  <ul>
+   <li>ike-parent</li>
+   <li>ike-workspace-maven-plugin</li>
+   <li>ike-bom</li>
+  </ul>
+ </div>
+</div>
+<div>
+ <h2 id="examples"><a href="#examples"></a><a id="examples"></a>Examples</h2>
+ <p>Reference projects that show how to consume the IKE foundation. They are deliberately <strong>not</strong> published to Maven Central: they are worked examples to read and copy, not libraries to depend on. Publishing them as artifacts would invite accidental coupling to code that exists only to illustrate a pattern.</p>
 </div>
 <div>
  <h2 id="ike-documentation-example"><a href="#ike-documentation-example"></a><a id="ike-documentation-example"></a>IKE Documentation Example</h2>
@@ -246,11 +360,11 @@
    </tr>
    <tr class="b">
     <td style="text-align: left;">Site</td>
-    <td><a href="https://ike.network/doc-example/">ike.network/doc-example</a><sup class="visible-print-inline">[1]</sup></td>
+    <td><a href="https://ike.network/doc-example/">ike.network/doc-example</a><sup class="visible-print-inline">[10]</sup></td>
    </tr>
    <tr class="a">
     <td style="text-align: left;">GitHub</td>
-    <td><a href="https://github.com/IKE-Network/doc-example" class="externalLink">IKE-Network/doc-example</a><sup class="visible-print-inline">[2]</sup></td>
+    <td><a href="https://github.com/IKE-Network/doc-example" class="externalLink">IKE-Network/doc-example</a><sup class="visible-print-inline">[11]</sup></td>
    </tr>
   </tbody>
  </table>
@@ -266,45 +380,14 @@
    </tr>
    <tr class="b">
     <td style="text-align: left;">Site</td>
-    <td><a href="https://ike.network/example-project/">ike.network/example-project</a><sup class="visible-print-inline">[3]</sup></td>
+    <td><a href="https://ike.network/example-project/">ike.network/example-project</a><sup class="visible-print-inline">[12]</sup></td>
    </tr>
    <tr class="a">
     <td style="text-align: left;">GitHub</td>
-    <td><a href="https://github.com/IKE-Network/example-project" class="externalLink">IKE-Network/example-project</a><sup class="visible-print-inline">[4]</sup></td>
+    <td><a href="https://github.com/IKE-Network/example-project" class="externalLink">IKE-Network/example-project</a><sup class="visible-print-inline">[13]</sup></td>
    </tr>
   </tbody>
  </table>
-</div>
-<div>
- <h2 id="ike-docs"><a href="#ike-docs"></a><a id="ike-docs"></a>IKE Docs</h2>
- <p>Documentation plumbing for the IKE Network. Hosts the ike-doc-maven-plugin (ike-doc packaging, AsciiDoc/render pipeline, PDF dispatch), the Koncept AsciiDoc extension, DocBook XSL + fonts, shared doc resources, and the semantic linebreak reformatter. Split from ike-pipeline to resolve the extensions=true reactor-load cycle. See IKE-Network/ike-issues#216.</p>
- <table class="bodyTable table table-striped table-hover" style="background: #FFFFFF">
-  <tbody>
-   <tr class="a">
-    <td style="text-align: left;">Version</td>
-    <td>44</td>
-   </tr>
-   <tr class="b">
-    <td style="text-align: left;">Site</td>
-    <td><a href="https://ike.network/ike-docs/">ike.network/ike-docs</a><sup class="visible-print-inline">[5]</sup></td>
-   </tr>
-   <tr class="a">
-    <td style="text-align: left;">GitHub</td>
-    <td><a href="https://github.com/IKE-Network/ike-docs" class="externalLink">IKE-Network/ike-docs</a><sup class="visible-print-inline">[6]</sup></td>
-   </tr>
-  </tbody>
- </table>
- <div>
-  <h4 id="modules"><a href="#modules"></a><a id="modules"></a>Modules</h4>
-  <ul>
-   <li>ike-doc-resources</li>
-   <li>minimal-fonts</li>
-   <li>docbook-xsl</li>
-   <li>koncept-asciidoc-extension</li>
-   <li>ike-doc-maven-plugin</li>
-   <li>semantic-linebreak</li>
-  </ul>
- </div>
 </div>
 <div>
  <h2 id="ike-example-integration-test-harness"><a href="#ike-example-integration-test-harness"></a><a id="ike-example-integration-test-harness"></a>IKE Example Integration Test Harness</h2>
@@ -317,11 +400,11 @@
    </tr>
    <tr class="b">
     <td style="text-align: left;">Site</td>
-    <td><a href="https://ike.network/ike-example-its/">ike.network/ike-example-its</a><sup class="visible-print-inline">[7]</sup></td>
+    <td><a href="https://ike.network/ike-example-its/">ike.network/ike-example-its</a><sup class="visible-print-inline">[14]</sup></td>
    </tr>
    <tr class="a">
     <td style="text-align: left;">GitHub</td>
-    <td><a href="https://github.com/IKE-Network/ike-example-its" class="externalLink">IKE-Network/ike-example-its</a><sup class="visible-print-inline">[8]</sup></td>
+    <td><a href="https://github.com/IKE-Network/ike-example-its" class="externalLink">IKE-Network/ike-example-its</a><sup class="visible-print-inline">[15]</sup></td>
    </tr>
   </tbody>
  </table>
@@ -336,77 +419,20 @@
    </tr>
    <tr class="b">
     <td style="text-align: left;">Site</td>
-    <td><a href="https://ike.network/ike-example-ws/">ike.network/ike-example-ws</a><sup class="visible-print-inline">[9]</sup></td>
+    <td><a href="https://ike.network/ike-example-ws/">ike.network/ike-example-ws</a><sup class="visible-print-inline">[16]</sup></td>
    </tr>
    <tr class="a">
     <td style="text-align: left;">GitHub</td>
-    <td><a href="https://github.com/IKE-Network/ike-example-ws" class="externalLink">IKE-Network/ike-example-ws</a><sup class="visible-print-inline">[10]</sup></td>
-   </tr>
-  </tbody>
- </table>
- <div>
-  <h4 id="modules_2"><a href="#modules_2"></a><a id="modules-2"></a>Modules</h4>
-  <ul>
-   <li>doc-example</li>
-   <li>example-project</li>
-   <li>its</li>
-  </ul>
- </div>
-</div>
-<div>
- <h2 id="ike-platform"><a href="#ike-platform"></a><a id="ike-platform"></a>IKE Platform</h2>
- <p>Consumer-facing parent POM, BOM, and workspace management plugin for the IKE Network. External doc and code projects inherit from ike-parent (declared here); cross-repo workspace operations use ike-workspace-maven-plugin (ws:* goals). Consumes ike-docs as an external artifact — ike-parent declares ike-doc-maven-plugin with extensions=true, resolving from Nexus at project-load time. Split from the archived ike-pipeline; see IKE-Network/ike-issues#216.</p>
- <table class="bodyTable table table-striped table-hover" style="background: #FFFFFF">
-  <tbody>
-   <tr class="a">
-    <td style="text-align: left;">Version</td>
-    <td>72</td>
-   </tr>
-   <tr class="b">
-    <td style="text-align: left;">Site</td>
-    <td><a href="https://ike.network/ike-platform/">ike.network/ike-platform</a><sup class="visible-print-inline">[11]</sup></td>
-   </tr>
-   <tr class="a">
-    <td style="text-align: left;">GitHub</td>
-    <td><a href="https://github.com/IKE-Network/ike-platform" class="externalLink">IKE-Network/ike-platform</a><sup class="visible-print-inline">[12]</sup></td>
-   </tr>
-  </tbody>
- </table>
- <div>
-  <h4 id="modules_3"><a href="#modules_3"></a><a id="modules-3"></a>Modules</h4>
-  <ul>
-   <li>ike-parent</li>
-   <li>ike-workspace-maven-plugin</li>
-   <li>ike-bom</li>
-  </ul>
- </div>
-</div>
-<div>
- <h2 id="ike-tooling"><a href="#ike-tooling"></a><a id="ike-tooling"></a>IKE Tooling</h2>
- <p>Workspace management, release orchestration, gitflow workflows, and build-time utilities for IKE Network projects.</p>
- <table class="bodyTable table table-striped table-hover" style="background: #FFFFFF">
-  <tbody>
-   <tr class="a">
-    <td style="text-align: left;">Version</td>
-    <td>188</td>
-   </tr>
-   <tr class="b">
-    <td style="text-align: left;">Site</td>
-    <td><a href="https://ike.network/ike-tooling/">ike.network/ike-tooling</a><sup class="visible-print-inline">[13]</sup></td>
-   </tr>
-   <tr class="a">
-    <td style="text-align: left;">GitHub</td>
-    <td><a href="https://github.com/IKE-Network/ike-tooling" class="externalLink">IKE-Network/ike-tooling</a><sup class="visible-print-inline">[14]</sup></td>
+    <td><a href="https://github.com/IKE-Network/ike-example-ws" class="externalLink">IKE-Network/ike-example-ws</a><sup class="visible-print-inline">[17]</sup></td>
    </tr>
   </tbody>
  </table>
  <div>
   <h4 id="modules_4"><a href="#modules_4"></a><a id="modules-4"></a>Modules</h4>
   <ul>
-   <li>ike-build-standards</li>
-   <li>ike-workspace-model</li>
-   <li>ike-maven-plugin-support</li>
-   <li>ike-maven-plugin</li>
+   <li>doc-example</li>
+   <li>example-project</li>
+   <li>its</li>
   </ul>
  </div>
 </div>
@@ -428,23 +454,26 @@
 <div class="footnotes visible-print-block">
 								Links:
 								<ul class="list-unstyled">
-								<li>[1] https://ike.network/doc-example/</li>
-								<li>[2] https://github.com/IKE-Network/doc-example</li>
-								<li>[3] https://ike.network/example-project/</li>
-								<li>[4] https://github.com/IKE-Network/example-project</li>
-								<li>[5] https://ike.network/ike-docs/</li>
-								<li>[6] https://github.com/IKE-Network/ike-docs</li>
-								<li>[7] https://ike.network/ike-example-its/</li>
-								<li>[8] https://github.com/IKE-Network/ike-example-its</li>
-								<li>[9] https://ike.network/ike-example-ws/</li>
-								<li>[10] https://github.com/IKE-Network/ike-example-ws</li>
-								<li>[11] https://ike.network/ike-platform/</li>
-								<li>[12] https://github.com/IKE-Network/ike-platform</li>
-								<li>[13] https://ike.network/ike-tooling/</li>
-								<li>[14] https://github.com/IKE-Network/ike-tooling</li>
+								<li>[1] https://central.sonatype.com/artifact/network.ike/ike-base-parent</li>
+								<li>[2] https://ike.network/ike-base-parent/</li>
+								<li>[3] https://github.com/IKE-Network/ike-base-parent</li>
+								<li>[4] https://ike.network/ike-tooling/</li>
+								<li>[5] https://github.com/IKE-Network/ike-tooling</li>
+								<li>[6] https://ike.network/ike-docs/</li>
+								<li>[7] https://github.com/IKE-Network/ike-docs</li>
+								<li>[8] https://ike.network/ike-platform/</li>
+								<li>[9] https://github.com/IKE-Network/ike-platform</li>
+								<li>[10] https://ike.network/doc-example/</li>
+								<li>[11] https://github.com/IKE-Network/doc-example</li>
+								<li>[12] https://ike.network/example-project/</li>
+								<li>[13] https://github.com/IKE-Network/example-project</li>
+								<li>[14] https://ike.network/ike-example-its/</li>
+								<li>[15] https://github.com/IKE-Network/ike-example-its</li>
+								<li>[16] https://ike.network/ike-example-ws/</li>
+								<li>[17] https://github.com/IKE-Network/ike-example-ws</li>
 								</ul>
 							</div>
-<div class="date">Date: <strong>2026-05-19 07:28:25 -0700</strong></div>
+<div class="date">Date: <strong>2026-05-19 08:28:56 -0700</strong></div>
 						</div>
 						</div>
 					</div>
