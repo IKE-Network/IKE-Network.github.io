@@ -92,47 +92,16 @@ Documentation-only project demonstrating the IKE AsciiDoc pipeline. Exercises al
 | Site | [ike.network/doc-example](https://ike.network/doc-example/)[13] |
 | GitHub | [IKE-Network/doc-example](https://github.com/IKE-Network/doc-example)[14] |
 
-## [#ike-example-project](#ike-example-project)IKE Example Project
-
-Example Java project demonstrating IKE documentation pipeline integration with Java source, tests, and Koncept macros.
-
-| Version | 31 |
-| --- | --- |
-| Site | [ike.network/example-project](https://ike.network/example-project/)[15] |
-| GitHub | [IKE-Network/example-project](https://github.com/IKE-Network/example-project)[16] |
-
-## [#ike-example-integration-test-harness](#ike-example-integration-test-harness)IKE Example Integration Test Harness
-
-End-to-end smoke tests that exercise the IKE Network release cascade as external consumers would. Each IT case clones the intended usage pattern (doc-only project, java + docs, BOM import, ws:create scaffold) in a fresh Maven environment and asserts that the build succeeds and produces the expected artifacts.
-
-| Version | 23 |
-| --- | --- |
-| Site | [ike.network/ike-example-its](https://ike.network/ike-example-its/)[17] |
-| GitHub | [IKE-Network/ike-example-its](https://github.com/IKE-Network/ike-example-its)[18] |
-
-## [#ike-example-workspace](#ike-example-workspace)IKE Example Workspace
-
-| Version | 23 |
-| --- | --- |
-| Site | [ike.network/ike-example-ws](https://ike.network/ike-example-ws/)[19] |
-| GitHub | [IKE-Network/ike-example-ws](https://github.com/IKE-Network/ike-example-ws)[20] |
-
-#### [#modules_4](#modules_4)Modules
-
-- doc-example
-- example-project
-- its
-
 ## [#ike-workspace-extension](#ike-workspace-extension)IKE Workspace Extension
 
-[https://central.sonatype.com/artifact/network.ike.tooling/ike-workspace-extension](https://central.sonatype.com/artifact/network.ike.tooling/ike-workspace-extension)[21]
+[https://central.sonatype.com/artifact/network.ike.tooling/ike-workspace-extension](https://central.sonatype.com/artifact/network.ike.tooling/ike-workspace-extension)[15]
 
 Maven 4 build extension that prunes non-existent <subprojects> entries from workspace POMs before model validation. Lets a fresh clone of an IKE workspace bootstrap with mvn ws:scaffold-init before any subproject directory is on disk.
 
 | Version | 2 |
 | --- | --- |
-| Site | [ike.network/ike-workspace-extension](https://ike.network/ike-workspace-extension/)[22] |
-| GitHub | [IKE-Network/ike-workspace-extension](https://github.com/IKE-Network/ike-workspace-extension)[23] |
+| Site | [ike.network/ike-workspace-extension](https://ike.network/ike-workspace-extension/)[16] |
+| GitHub | [IKE-Network/ike-workspace-extension](https://github.com/IKE-Network/ike-workspace-extension)[17] |
 
 ## [#ike-integration-tests-example](#ike-integration-tests-example)IKE Integration Tests Example
 
@@ -140,8 +109,8 @@ End-to-end smoke tests that exercise the IKE Network release cascade as external
 
 | Version | 24 |
 | --- | --- |
-| Site | [ike.network/integration-tests-example](https://ike.network/integration-tests-example/)[24] |
-| GitHub | [IKE-Network/integration-tests-example](https://github.com/IKE-Network/integration-tests-example)[25] |
+| Site | [ike.network/integration-tests-example](https://ike.network/integration-tests-example/)[18] |
+| GitHub | [IKE-Network/integration-tests-example](https://github.com/IKE-Network/integration-tests-example)[19] |
 
 ## [#ike-project-example](#ike-project-example)IKE Project Example
 
@@ -149,17 +118,17 @@ Example Java project demonstrating IKE documentation pipeline integration with J
 
 | Version | 32 |
 | --- | --- |
-| Site | [ike.network/project-example](https://ike.network/project-example/)[26] |
-| GitHub | [IKE-Network/project-example](https://github.com/IKE-Network/project-example)[27] |
+| Site | [ike.network/project-example](https://ike.network/project-example/)[20] |
+| GitHub | [IKE-Network/project-example](https://github.com/IKE-Network/project-example)[21] |
 
 ## [#ike-workspace-example](#ike-workspace-example)IKE Workspace Example
 
 | Version | 23 |
 | --- | --- |
-| Site | [ike.network/workspace-example](https://ike.network/workspace-example/)[28] |
-| GitHub | [IKE-Network/workspace-example](https://github.com/IKE-Network/workspace-example)[29] |
+| Site | [ike.network/workspace-example](https://ike.network/workspace-example/)[22] |
+| GitHub | [IKE-Network/workspace-example](https://github.com/IKE-Network/workspace-example)[23] |
 
-#### [#modules_5](#modules_5)Modules
+#### [#modules_4](#modules_4)Modules
 
 - doc-example
 - project-example
