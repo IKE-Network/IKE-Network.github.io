@@ -68,7 +68,7 @@ Documentation plumbing for the IKE Network. Hosts the ike-doc-maven-plugin (ike-
 
 Consumer-facing parent POM, BOM, and workspace management plugin for the IKE Network. External doc and code projects inherit from ike-parent (declared here); cross-repo workspace operations use ike-workspace-maven-plugin (ws:* goals). Consumes ike-docs as an external artifact — ike-parent declares ike-doc-maven-plugin with extensions=true, resolving from Nexus at project-load time. Split from the archived ike-pipeline; see IKE-Network/ike-issues#216.
 
-| Version | 75 |
+| Version | 76 |
 | --- | --- |
 | Site | [ike.network/ike-platform](https://ike.network/ike-platform/)[11] |
 | GitHub | [IKE-Network/ike-platform](https://github.com/IKE-Network/ike-platform)[12] |
@@ -103,7 +103,7 @@ Example Java project demonstrating IKE documentation pipeline integration with J
 
 ## [#ike-example-integration-test-harness](#ike-example-integration-test-harness)IKE Example Integration Test Harness
 
-End-to-end smoke tests that exercise the IKE Network release cascade as external consumers would. Each IT case clones the intended usage pattern (doc-only project, java + docs, BOM import, ws:create scaffold) in a fresh Maven environment and asserts that the build succeeds and produces the expected artifacts.
+End-to-end smoke tests that exercise the IKE Network release cascade as external consumers would. Each IT case clones the intended usage pattern (doc-only project, java + docs, BOM import, ws:scaffold-init scaffold) in a fresh Maven environment and asserts that the build succeeds and produces the expected artifacts.
 
 | Version | 22 |
 | --- | --- |
@@ -125,9 +125,11 @@ End-to-end smoke tests that exercise the IKE Network release cascade as external
 
 ## [#ike-workspace-extension](#ike-workspace-extension)IKE Workspace Extension
 
+[https://central.sonatype.com/artifact/network.ike.tooling/ike-workspace-extension](https://central.sonatype.com/artifact/network.ike.tooling/ike-workspace-extension)[21]
+
 Maven 4 build extension that prunes non-existent <subprojects> entries from workspace POMs before model validation. Lets a fresh clone of an IKE workspace bootstrap with mvn ws:scaffold-init before any subproject directory is on disk.
 
 | Version | 2 |
 | --- | --- |
-| Site | [ike.network/ike-workspace-extension](https://ike.network/ike-workspace-extension/)[21] |
-| GitHub | [IKE-Network/ike-workspace-extension](https://github.com/IKE-Network/ike-workspace-extension)[22] |
+| Site | [ike.network/ike-workspace-extension](https://ike.network/ike-workspace-extension/)[22] |
+| GitHub | [IKE-Network/ike-workspace-extension](https://github.com/IKE-Network/ike-workspace-extension)[23] |
