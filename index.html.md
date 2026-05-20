@@ -133,3 +133,12 @@ Maven 4 build extension that prunes non-existent <subprojects> entries from work
 | --- | --- |
 | Site | [ike.network/ike-workspace-extension](https://ike.network/ike-workspace-extension/)[22] |
 | GitHub | [IKE-Network/ike-workspace-extension](https://github.com/IKE-Network/ike-workspace-extension)[23] |
+
+## [#ike-project-example](#ike-project-example)IKE Project Example
+
+Example Java project demonstrating IKE documentation pipeline integration with Java source, tests, and Koncept macros.
+
+| Version | 32 |
+| --- | --- |
+| Site | [ike.network/project-example](https://ike.network/project-example/)[24] |
+| GitHub | [IKE-Network/project-example](https://github.com/IKE-Network/project-example)[25] |
