@@ -134,11 +134,20 @@ Maven 4 build extension that prunes non-existent <subprojects> entries from work
 | Site | [ike.network/ike-workspace-extension](https://ike.network/ike-workspace-extension/)[22] |
 | GitHub | [IKE-Network/ike-workspace-extension](https://github.com/IKE-Network/ike-workspace-extension)[23] |
 
+## [#ike-integration-tests-example](#ike-integration-tests-example)IKE Integration Tests Example
+
+End-to-end smoke tests that exercise the IKE Network release cascade as external consumers would. Each IT case clones the intended usage pattern (doc-only project, java + docs, BOM import, ws:create scaffold) in a fresh Maven environment and asserts that the build succeeds and produces the expected artifacts.
+
+| Version | 24 |
+| --- | --- |
+| Site | [ike.network/integration-tests-example](https://ike.network/integration-tests-example/)[24] |
+| GitHub | [IKE-Network/integration-tests-example](https://github.com/IKE-Network/integration-tests-example)[25] |
+
 ## [#ike-project-example](#ike-project-example)IKE Project Example
 
 Example Java project demonstrating IKE documentation pipeline integration with Java source, tests, and Koncept macros.
 
 | Version | 32 |
 | --- | --- |
-| Site | [ike.network/project-example](https://ike.network/project-example/)[24] |
-| GitHub | [IKE-Network/project-example](https://github.com/IKE-Network/project-example)[25] |
+| Site | [ike.network/project-example](https://ike.network/project-example/)[26] |
+| GitHub | [IKE-Network/project-example](https://github.com/IKE-Network/project-example)[27] |
