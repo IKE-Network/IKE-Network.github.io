@@ -62,27 +62,16 @@ Documentation plumbing for the IKE Network. Hosts the ike-doc-maven-plugin (ike-
 - ike-doc-maven-plugin
 - semantic-linebreak
 
-## [#ike-workspace-extension](#ike-workspace-extension)IKE Workspace Extension
-
-[https://central.sonatype.com/artifact/network.ike.tooling/ike-workspace-extension](https://central.sonatype.com/artifact/network.ike.tooling/ike-workspace-extension)[10]
-
-Maven 4 build extension that prunes non-existent <subprojects> entries from workspace POMs before model validation. Lets a fresh clone of an IKE workspace bootstrap with mvn ws:scaffold-init before any subproject directory is on disk.
-
-| Version | 2 |
-| --- | --- |
-| Site | [ike.network/ike-workspace-extension](https://ike.network/ike-workspace-extension/)[11] |
-| GitHub | [IKE-Network/ike-workspace-extension](https://github.com/IKE-Network/ike-workspace-extension)[12] |
-
 ## [#ike-platform](#ike-platform)IKE Platform
 
-[https://central.sonatype.com/artifact/network.ike.platform/ike-platform](https://central.sonatype.com/artifact/network.ike.platform/ike-platform)[13]
+[https://central.sonatype.com/artifact/network.ike.platform/ike-platform](https://central.sonatype.com/artifact/network.ike.platform/ike-platform)[10]
 
 Consumer-facing parent POM, BOM, and workspace management plugin for the IKE Network. External doc and code projects inherit from ike-parent (declared here); cross-repo workspace operations use ike-workspace-maven-plugin (ws:* goals). Consumes ike-docs as an external artifact — ike-parent declares ike-doc-maven-plugin with extensions=true, resolving from Nexus at project-load time. Split from the archived ike-pipeline; see IKE-Network/ike-issues#216.
 
 | Version | 78 |
 | --- | --- |
-| Site | [ike.network/ike-platform](https://ike.network/ike-platform/)[14] |
-| GitHub | [IKE-Network/ike-platform](https://github.com/IKE-Network/ike-platform)[15] |
+| Site | [ike.network/ike-platform](https://ike.network/ike-platform/)[11] |
+| GitHub | [IKE-Network/ike-platform](https://github.com/IKE-Network/ike-platform)[12] |
 
 #### [#modules_3](#modules_3)Modules
 
@@ -100,8 +89,8 @@ Documentation-only project demonstrating the IKE AsciiDoc pipeline. Exercises al
 
 | Version | 31 |
 | --- | --- |
-| Site | [ike.network/doc-example](https://ike.network/doc-example/)[16] |
-| GitHub | [IKE-Network/doc-example](https://github.com/IKE-Network/doc-example)[17] |
+| Site | [ike.network/doc-example](https://ike.network/doc-example/)[13] |
+| GitHub | [IKE-Network/doc-example](https://github.com/IKE-Network/doc-example)[14] |
 
 ## [#ike-example-project](#ike-example-project)IKE Example Project
 
@@ -109,8 +98,8 @@ Example Java project demonstrating IKE documentation pipeline integration with J
 
 | Version | 31 |
 | --- | --- |
-| Site | [ike.network/example-project](https://ike.network/example-project/)[18] |
-| GitHub | [IKE-Network/example-project](https://github.com/IKE-Network/example-project)[19] |
+| Site | [ike.network/example-project](https://ike.network/example-project/)[15] |
+| GitHub | [IKE-Network/example-project](https://github.com/IKE-Network/example-project)[16] |
 
 ## [#ike-example-integration-test-harness](#ike-example-integration-test-harness)IKE Example Integration Test Harness
 
@@ -118,18 +107,29 @@ End-to-end smoke tests that exercise the IKE Network release cascade as external
 
 | Version | 23 |
 | --- | --- |
-| Site | [ike.network/ike-example-its](https://ike.network/ike-example-its/)[20] |
-| GitHub | [IKE-Network/ike-example-its](https://github.com/IKE-Network/ike-example-its)[21] |
+| Site | [ike.network/ike-example-its](https://ike.network/ike-example-its/)[17] |
+| GitHub | [IKE-Network/ike-example-its](https://github.com/IKE-Network/ike-example-its)[18] |
 
 ## [#ike-example-workspace](#ike-example-workspace)IKE Example Workspace
 
-| Version | 22 |
+| Version | 23 |
 | --- | --- |
-| Site | [ike.network/ike-example-ws](https://ike.network/ike-example-ws/)[22] |
-| GitHub | [IKE-Network/ike-example-ws](https://github.com/IKE-Network/ike-example-ws)[23] |
+| Site | [ike.network/ike-example-ws](https://ike.network/ike-example-ws/)[19] |
+| GitHub | [IKE-Network/ike-example-ws](https://github.com/IKE-Network/ike-example-ws)[20] |
 
 #### [#modules_4](#modules_4)Modules
 
 - doc-example
 - example-project
 - its
+
+## [#ike-workspace-extension](#ike-workspace-extension)IKE Workspace Extension
+
+[https://central.sonatype.com/artifact/network.ike.tooling/ike-workspace-extension](https://central.sonatype.com/artifact/network.ike.tooling/ike-workspace-extension)[21]
+
+Maven 4 build extension that prunes non-existent <subprojects> entries from workspace POMs before model validation. Lets a fresh clone of an IKE workspace bootstrap with mvn ws:scaffold-init before any subproject directory is on disk.
+
+| Version | 2 |
+| --- | --- |
+| Site | [ike.network/ike-workspace-extension](https://ike.network/ike-workspace-extension/)[22] |
+| GitHub | [IKE-Network/ike-workspace-extension](https://github.com/IKE-Network/ike-workspace-extension)[23] |
