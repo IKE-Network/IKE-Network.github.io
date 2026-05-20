@@ -151,3 +151,16 @@ Example Java project demonstrating IKE documentation pipeline integration with J
 | --- | --- |
 | Site | [ike.network/project-example](https://ike.network/project-example/)[26] |
 | GitHub | [IKE-Network/project-example](https://github.com/IKE-Network/project-example)[27] |
+
+## [#ike-workspace-example](#ike-workspace-example)IKE Workspace Example
+
+| Version | 23 |
+| --- | --- |
+| Site | [ike.network/workspace-example](https://ike.network/workspace-example/)[28] |
+| GitHub | [IKE-Network/workspace-example](https://github.com/IKE-Network/workspace-example)[29] |
+
+#### [#modules_5](#modules_5)Modules
+
+- doc-example
+- project-example
+- integration-tests-example
