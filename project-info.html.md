@@ -13,7 +13,8 @@ This document provides an overview of the various documents and links that are p
 | Document | Description |
 | --- | --- |
 | [Maven Coordinates](dependency-info.html)[2] | This document describes how to include this project as a dependency using various dependency management tools. |
-| [About](index.html)[3] | Organization landing page for IKE Network projects. |
-| [Licenses](licenses.html)[4] | This document lists the project license(s). |
-| [Plugins](plugins.html)[5] | This document lists the build plugins and the report plugins used by this project. |
-| [Summary](summary.html)[6] | This document lists other related information of this project |
+| [Distribution Management](distribution-management.html)[3] | This document provides informations on the distribution management of this project. |
+| [About](index.html)[4] | Organization landing page for IKE Network projects. |
+| [Licenses](licenses.html)[5] | This document lists the project license(s). |
+| [Plugins](plugins.html)[6] | This document lists the build plugins and the report plugins used by this project. |
+| [Summary](summary.html)[7] | This document lists other related information of this project |
