@@ -125,11 +125,9 @@ End-to-end smoke tests that exercise the IKE Network release cascade as external
 
 ## [#ike-workspace-extension](#ike-workspace-extension)IKE Workspace Extension
 
-[https://central.sonatype.com/artifact/network.ike.tooling/ike-workspace-extension](https://central.sonatype.com/artifact/network.ike.tooling/ike-workspace-extension)[21]
-
 Maven 4 build extension that prunes non-existent <subprojects> entries from workspace POMs before model validation. Lets a fresh clone of an IKE workspace bootstrap with mvn ws:scaffold-init before any subproject directory is on disk.
 
-| Version | 2 |
+| Version | 3 |
 | --- | --- |
-| Site | [ike.network/ike-workspace-extension](https://ike.network/ike-workspace-extension/)[22] |
-| GitHub | [IKE-Network/ike-workspace-extension](https://github.com/IKE-Network/ike-workspace-extension)[23] |
+| Site | [ike.network/ike-workspace-extension](https://ike.network/ike-workspace-extension/)[21] |
+| GitHub | [IKE-Network/ike-workspace-extension](https://github.com/IKE-Network/ike-workspace-extension)[22] |
