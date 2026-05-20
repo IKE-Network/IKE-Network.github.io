@@ -103,9 +103,9 @@ Example Java project demonstrating IKE documentation pipeline integration with J
 
 ## [#ike-example-integration-test-harness](#ike-example-integration-test-harness)IKE Example Integration Test Harness
 
-End-to-end smoke tests that exercise the IKE Network release cascade as external consumers would. Each IT case clones the intended usage pattern (doc-only project, java + docs, BOM import, ws:scaffold-init scaffold) in a fresh Maven environment and asserts that the build succeeds and produces the expected artifacts.
+End-to-end smoke tests that exercise the IKE Network release cascade as external consumers would. Each IT case clones the intended usage pattern (doc-only project, java + docs, BOM import, ws:create scaffold) in a fresh Maven environment and asserts that the build succeeds and produces the expected artifacts.
 
-| Version | 22 |
+| Version | 23 |
 | --- | --- |
 | Site | [ike.network/ike-example-its](https://ike.network/ike-example-its/)[17] |
 | GitHub | [IKE-Network/ike-example-its](https://github.com/IKE-Network/ike-example-its)[18] |
