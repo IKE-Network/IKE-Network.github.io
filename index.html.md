@@ -10,7 +10,30 @@ The IKE Network (Integrated Knowledge Exchange) is a sociotechnical fabric where
 
 ## [#foundation](#foundation)Foundation
 
-The IKE foundation — published to Maven Central and inheritable by any project. Each layer builds on the one above it.
+The IKE foundation — published to Maven Central and inheritable by any project.
+
+The foundation members fall into two layered orderings. `ike-base-parent` sits at the apex of the **parent** inheritance chain — every other foundation artifact inherits from it. `ike-platform` sits at the terminus of the **build-and-release** dependency chain — releases propagate through it last.
+
+Build/release dependency order
+
+```
+                  ike-base-parent
+                  (parent inheritance only)
+                         |
+        +----------------+----------------+
+        v                                 v
+   ike-tooling                  ike-workspace-extension
+        |                                 |
+        v                                 |
+    ike-docs                              |
+        |                                 |
+        +----------------+----------------+
+                         v
+                    ike-platform
+              (consumes all three above)
+```
+
+Members at the same level have no dependency on each other — `ike-tooling` and `ike-workspace-extension` can release in either order or in parallel.
 
 ## [#ike-base-parent](#ike-base-parent)IKE Base Parent
 
@@ -29,7 +52,7 @@ Tier 0 foundation parent for the IKE Network — the apex of the parent inherita
 
 Workspace management, release orchestration, gitflow workflows, and build-time utilities for IKE Network projects.
 
-| Version | 191 |
+| Version | 192 |
 | --- | --- |
 | Site | [ike.network/ike-tooling](https://ike.network/ike-tooling/)[5] |
 | GitHub | [IKE-Network/ike-tooling](https://github.com/IKE-Network/ike-tooling)[6] |
