@@ -41,7 +41,7 @@ Members at the same level have no dependency on each other — `ike-tooling` and
 
 Tier 0 foundation parent for the IKE Network — the apex of the parent inheritance forest, inherited by ike-tooling, ike-docs, and ike-platform. Carries shared publishing metadata, GPG signing, and Maven Central publishing configuration.
 
-| Version | 5 |
+| Version | 6 |
 | --- | --- |
 | Site | [ike.network/ike-base-parent](https://ike.network/ike-base-parent/)[2] |
 | GitHub | [IKE-Network/ike-base-parent](https://github.com/IKE-Network/ike-base-parent)[3] |
