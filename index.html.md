@@ -55,23 +55,25 @@ Tier 0 foundation parent for the IKE Network — the apex of the parent inherita
 
 ## [#ike-java-support](#ike-java-support)IKE Java Support
 
+[https://central.sonatype.com/artifact/network.ike/ike-java-support](https://central.sonatype.com/artifact/network.ike/ike-java-support)[4]
+
 Shared, enforced-zero-dependency value types for the IKE Network: ConstantBackedEnum for compiler-visible constants, EnumDefinition for controlled-vocabulary enums, and the ReleasePolicy release-cascade policy ladder. See IKE-Network/ike-issues#498.
 
 | Version | 1 |
 | --- | --- |
-| Site | [ike.network/ike-java-support](https://ike.network/ike-java-support/)[4] |
-| GitHub | [IKE-Network/ike-java-support](https://github.com/IKE-Network/ike-java-support)[5] |
+| Site | [ike.network/ike-java-support](https://ike.network/ike-java-support/)[5] |
+| GitHub | [IKE-Network/ike-java-support](https://github.com/IKE-Network/ike-java-support)[6] |
 
 ## [#ike-tooling](#ike-tooling)IKE Tooling
 
-[https://central.sonatype.com/artifact/network.ike.tooling/ike-tooling](https://central.sonatype.com/artifact/network.ike.tooling/ike-tooling)[6]
+[https://central.sonatype.com/artifact/network.ike.tooling/ike-tooling](https://central.sonatype.com/artifact/network.ike.tooling/ike-tooling)[7]
 
 Workspace management, release orchestration, gitflow workflows, and build-time utilities for IKE Network projects.
 
 | Version | 204 |
 | --- | --- |
-| Site | [ike.network/ike-tooling](https://ike.network/ike-tooling/)[7] |
-| GitHub | [IKE-Network/ike-tooling](https://github.com/IKE-Network/ike-tooling)[8] |
+| Site | [ike.network/ike-tooling](https://ike.network/ike-tooling/)[8] |
+| GitHub | [IKE-Network/ike-tooling](https://github.com/IKE-Network/ike-tooling)[9] |
 
 #### [#modules](#modules)Modules
 
@@ -82,14 +84,14 @@ Workspace management, release orchestration, gitflow workflows, and build-time u
 
 ## [#ike-docs](#ike-docs)IKE Docs
 
-[https://central.sonatype.com/artifact/network.ike.docs/ike-docs](https://central.sonatype.com/artifact/network.ike.docs/ike-docs)[9]
+[https://central.sonatype.com/artifact/network.ike.docs/ike-docs](https://central.sonatype.com/artifact/network.ike.docs/ike-docs)[10]
 
 Documentation plumbing for the IKE Network. Hosts the ike-doc-maven-plugin (ike-doc packaging, AsciiDoc/render pipeline, PDF dispatch), the Koncept AsciiDoc extension, DocBook XSL + fonts, shared doc resources, and the semantic linebreak reformatter. Split from ike-pipeline to resolve the extensions=true reactor-load cycle. See IKE-Network/ike-issues#216.
 
 | Version | 55 |
 | --- | --- |
-| Site | [ike.network/ike-docs](https://ike.network/ike-docs/)[10] |
-| GitHub | [IKE-Network/ike-docs](https://github.com/IKE-Network/ike-docs)[11] |
+| Site | [ike.network/ike-docs](https://ike.network/ike-docs/)[11] |
+| GitHub | [IKE-Network/ike-docs](https://github.com/IKE-Network/ike-docs)[12] |
 
 #### [#modules_2](#modules_2)Modules
 
@@ -102,14 +104,14 @@ Documentation plumbing for the IKE Network. Hosts the ike-doc-maven-plugin (ike-
 
 ## [#ike-workspace-extension](#ike-workspace-extension)IKE Workspace Extension
 
-[https://central.sonatype.com/artifact/network.ike.tooling/ike-workspace-extension](https://central.sonatype.com/artifact/network.ike.tooling/ike-workspace-extension)[12]
+[https://central.sonatype.com/artifact/network.ike.tooling/ike-workspace-extension](https://central.sonatype.com/artifact/network.ike.tooling/ike-workspace-extension)[13]
 
 Maven 4 build extension that prunes non-existent <subprojects> entries from workspace POMs before model validation. Lets a fresh clone of an IKE workspace bootstrap with mvn ws:scaffold-init before any subproject directory is on disk.
 
 | Version | 4 |
 | --- | --- |
-| Site | [ike.network/ike-workspace-extension](https://ike.network/ike-workspace-extension/)[13] |
-| GitHub | [IKE-Network/ike-workspace-extension](https://github.com/IKE-Network/ike-workspace-extension)[14] |
+| Site | [ike.network/ike-workspace-extension](https://ike.network/ike-workspace-extension/)[14] |
+| GitHub | [IKE-Network/ike-workspace-extension](https://github.com/IKE-Network/ike-workspace-extension)[15] |
 
 ## [#ike-version-management-extension](#ike-version-management-extension)IKE Version Management Extension
 
@@ -117,19 +119,19 @@ Maven 4 build extension that implements the IKE GA·convention for version-prope
 
 | Version | 1 |
 | --- | --- |
-| Site | [ike.network/ike-version-management-extension](https://ike.network/ike-version-management-extension/)[15] |
-| GitHub | [IKE-Network/ike-version-management-extension](https://github.com/IKE-Network/ike-version-management-extension)[16] |
+| Site | [ike.network/ike-version-management-extension](https://ike.network/ike-version-management-extension/)[16] |
+| GitHub | [IKE-Network/ike-version-management-extension](https://github.com/IKE-Network/ike-version-management-extension)[17] |
 
 ## [#ike-platform](#ike-platform)IKE Platform
 
-[https://central.sonatype.com/artifact/network.ike.platform/ike-platform](https://central.sonatype.com/artifact/network.ike.platform/ike-platform)[17]
+[https://central.sonatype.com/artifact/network.ike.platform/ike-platform](https://central.sonatype.com/artifact/network.ike.platform/ike-platform)[18]
 
 Consumer-facing parent POM, BOM, and workspace management plugin for the IKE Network. External doc and code projects inherit from ike-parent (declared here); cross-repo workspace operations use ike-workspace-maven-plugin (ws:* goals). Consumes ike-docs as an external artifact — ike-parent declares ike-doc-maven-plugin with extensions=true, resolving from Nexus at project-load time. Split from the archived ike-pipeline; see IKE-Network/ike-issues#216.
 
 | Version | 85 |
 | --- | --- |
-| Site | [ike.network/ike-platform](https://ike.network/ike-platform/)[18] |
-| GitHub | [IKE-Network/ike-platform](https://github.com/IKE-Network/ike-platform)[19] |
+| Site | [ike.network/ike-platform](https://ike.network/ike-platform/)[19] |
+| GitHub | [IKE-Network/ike-platform](https://github.com/IKE-Network/ike-platform)[20] |
 
 #### [#modules_3](#modules_3)Modules
 
@@ -147,8 +149,8 @@ Documentation-only project demonstrating the IKE AsciiDoc pipeline. Exercises al
 
 | Version | 32 |
 | --- | --- |
-| Site | [ike.network/doc-example](https://ike.network/doc-example/)[20] |
-| GitHub | [IKE-Network/doc-example](https://github.com/IKE-Network/doc-example)[21] |
+| Site | [ike.network/doc-example](https://ike.network/doc-example/)[21] |
+| GitHub | [IKE-Network/doc-example](https://github.com/IKE-Network/doc-example)[22] |
 
 ## [#ike-integration-tests-example](#ike-integration-tests-example)IKE Integration Tests Example
 
@@ -156,8 +158,8 @@ End-to-end smoke tests that exercise the IKE Network release cascade as external
 
 | Version | 24 |
 | --- | --- |
-| Site | [ike.network/integration-tests-example](https://ike.network/integration-tests-example/)[22] |
-| GitHub | [IKE-Network/integration-tests-example](https://github.com/IKE-Network/integration-tests-example)[23] |
+| Site | [ike.network/integration-tests-example](https://ike.network/integration-tests-example/)[23] |
+| GitHub | [IKE-Network/integration-tests-example](https://github.com/IKE-Network/integration-tests-example)[24] |
 
 ## [#ike-project-example](#ike-project-example)IKE Project Example
 
@@ -165,15 +167,15 @@ Example Java project demonstrating IKE documentation pipeline integration with J
 
 | Version | 32 |
 | --- | --- |
-| Site | [ike.network/project-example](https://ike.network/project-example/)[24] |
-| GitHub | [IKE-Network/project-example](https://github.com/IKE-Network/project-example)[25] |
+| Site | [ike.network/project-example](https://ike.network/project-example/)[25] |
+| GitHub | [IKE-Network/project-example](https://github.com/IKE-Network/project-example)[26] |
 
 ## [#ike-workspace-reactor-example](#ike-workspace-reactor-example)IKE Workspace Reactor Example
 
 | Version | 23 |
 | --- | --- |
-| Site | [ike.network/workspace-reactor-example](https://ike.network/workspace-reactor-example/)[26] |
-| GitHub | [IKE-Network/workspace-reactor-example](https://github.com/IKE-Network/workspace-reactor-example)[27] |
+| Site | [ike.network/workspace-reactor-example](https://ike.network/workspace-reactor-example/)[27] |
+| GitHub | [IKE-Network/workspace-reactor-example](https://github.com/IKE-Network/workspace-reactor-example)[28] |
 
 #### [#modules_4](#modules_4)Modules
 
