@@ -126,14 +126,23 @@ Documentation-only project demonstrating the IKE AsciiDoc pipeline. Exercises al
 | Site | [ike.network/doc-example](https://ike.network/doc-example/)[16] |
 | GitHub | [IKE-Network/doc-example](https://github.com/IKE-Network/doc-example)[17] |
 
+## [#ike-java-support](#ike-java-support)IKE Java Support
+
+Shared, enforced-zero-dependency value types for the IKE Network: ConstantBackedEnum for compiler-visible constants, EnumDefinition for controlled-vocabulary enums, and the ReleasePolicy release-cascade policy ladder. See IKE-Network/ike-issues#498.
+
+| Version | 1 |
+| --- | --- |
+| Site | [ike.network/ike-java-support](https://ike.network/ike-java-support/)[18] |
+| GitHub | [IKE-Network/ike-java-support](https://github.com/IKE-Network/ike-java-support)[19] |
+
 ## [#ike-version-management-extension](#ike-version-management-extension)IKE Version Management Extension
 
 Maven 4 build extension that implements the IKE GA·convention for version-property naming: ${groupId·artifactId} (U+00B7 MIDDLE DOT). Injects alias indirections from a bundled manifest, fails fast on undeclared ${G·A} references, and detects ${G.A} typos with a corrective hint. See IKE-Network/ike-issues#470, #472.
 
 | Version | 1 |
 | --- | --- |
-| Site | [ike.network/ike-version-management-extension](https://ike.network/ike-version-management-extension/)[18] |
-| GitHub | [IKE-Network/ike-version-management-extension](https://github.com/IKE-Network/ike-version-management-extension)[19] |
+| Site | [ike.network/ike-version-management-extension](https://ike.network/ike-version-management-extension/)[20] |
+| GitHub | [IKE-Network/ike-version-management-extension](https://github.com/IKE-Network/ike-version-management-extension)[21] |
 
 ## [#ike-integration-tests-example](#ike-integration-tests-example)IKE Integration Tests Example
 
@@ -141,8 +150,8 @@ End-to-end smoke tests that exercise the IKE Network release cascade as external
 
 | Version | 24 |
 | --- | --- |
-| Site | [ike.network/integration-tests-example](https://ike.network/integration-tests-example/)[20] |
-| GitHub | [IKE-Network/integration-tests-example](https://github.com/IKE-Network/integration-tests-example)[21] |
+| Site | [ike.network/integration-tests-example](https://ike.network/integration-tests-example/)[22] |
+| GitHub | [IKE-Network/integration-tests-example](https://github.com/IKE-Network/integration-tests-example)[23] |
 
 ## [#ike-project-example](#ike-project-example)IKE Project Example
 
@@ -150,15 +159,15 @@ Example Java project demonstrating IKE documentation pipeline integration with J
 
 | Version | 32 |
 | --- | --- |
-| Site | [ike.network/project-example](https://ike.network/project-example/)[22] |
-| GitHub | [IKE-Network/project-example](https://github.com/IKE-Network/project-example)[23] |
+| Site | [ike.network/project-example](https://ike.network/project-example/)[24] |
+| GitHub | [IKE-Network/project-example](https://github.com/IKE-Network/project-example)[25] |
 
-## [#ike-workspace-example](#ike-workspace-example)IKE Workspace Example
+## [#ike-workspace-reactor-example](#ike-workspace-reactor-example)IKE Workspace Reactor Example
 
 | Version | 23 |
 | --- | --- |
-| Site | [ike.network/workspace-example](https://ike.network/workspace-example/)[24] |
-| GitHub | [IKE-Network/workspace-example](https://github.com/IKE-Network/workspace-example)[25] |
+| Site | [ike.network/workspace-reactor-example](https://ike.network/workspace-reactor-example/)[26] |
+| GitHub | [IKE-Network/workspace-reactor-example](https://github.com/IKE-Network/workspace-reactor-example)[27] |
 
 #### [#modules_4](#modules_4)Modules
 
