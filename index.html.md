@@ -14,31 +14,7 @@ The IKE foundation — published to Maven Central and inheritable by any project
 
 The foundation members fall into two layered orderings. `ike-base-parent` sits at the apex of the **parent** inheritance chain — every other foundation artifact inherits from it. `ike-platform` sits at the terminus of the **build-and-release** dependency chain — releases propagate through it last.
 
-Build/release dependency order
-
-```
-                  ike-base-parent
-                  (parent inheritance only)
-                         |
-                ike-java-support
-                  (Tier-0 value types)
-                         |
-        +----------------+----------------+
-        v                                 v
-   ike-tooling                  ike-workspace-extension
-        |                                 |
-        v                                 |
-    ike-docs                              |
-        |                                 |
-        +----------------+----------------+
-                         v
-                    ike-platform
-              (consumes all three above)
-
-  ike-version-management-extension
-  (registered at every consumer build;
-   validates ${G·A} pins and ${G·A·policy})
-```
+![Build/release dependency order](https://kroki.komet.sh/graphviz/svg/eNqFks1O4zAQx-99CivsYZEaqaUKUKGstHuBB9hbWa0m8SQ1dWzLdgJZ1OfizpPtOA5twoWc4t98_eeDi9qC2bNKt4qDF1qx1wVjFtSBC5v__nVHr6IutdQ294SdAYvKB1zqxoQw4i0GoDRHtnN7MJgX-mXJnO8l5okNXsiXlZASebKkasoraMj0gLJDL0oYqRP_MF-v6UG-sWpygbdVhlvy-ABXeMM3V8mfUBR5TUW_yLg9x2bDF2JDZ-CQsZ2EAmWeiAOmgaSxx0f1Pf4wrWR_mcxFVVW1wdVEFF5n69UqinpyrZnnfYIOUqJG25C4A9ki871BdxlDvNZyHhKIUHU0Pzt88TPzs7YH2kaJKVlQOdpddOW6dPNMgUSbkeDntkAqbZvpRNIfsYNdXCAHt6f1sTGKxalMOiX_IHb6HvSe-iIQNJzU0TvUPTd2AkRcW8SjLGXrPNq_XYPDVbLxoLj2HvndQD6mfw3rYgtJhKNQi7UICZAz6ho7tD35K9c2aFnRCskfFS1C0OGjY99e79_ffh6ZEcoxUHwE72-G1lD2xzH3-UpXEQR104FSmbCLtAEFNTY0qcmCPt3QBrMqm9zQ2MUw2ePiuPgPKRMwPA==) Figure 1. Build/release dependency order 
 
 Members at the same level have no dependency on each other — `ike-tooling` and `ike-workspace-extension` can release in either order or in parallel.
 
@@ -70,7 +46,7 @@ Shared, enforced-zero-dependency value types for the IKE Network: ConstantBacked
 
 Workspace management, release orchestration, gitflow workflows, and build-time utilities for IKE Network projects.
 
-| Version | 204 |
+| Version | 206 |
 | --- | --- |
 | Site | [ike.network/ike-tooling](https://ike.network/ike-tooling/)[8] |
 | GitHub | [IKE-Network/ike-tooling](https://github.com/IKE-Network/ike-tooling)[9] |
