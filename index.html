@@ -260,6 +260,9 @@
   <pre class="prettyprint" copy-to-clipboard=""><code>                  ike-base-parent
                   (parent inheritance only)
                          |
+                ike-java-support
+                  (Tier-0 value types)
+                         |
         +----------------+----------------+
         v                                 v
    ike-tooling                  ike-workspace-extension
@@ -270,7 +273,11 @@
         +----------------+----------------+
                          v
                     ike-platform
-              (consumes all three above)</code></pre>
+              (consumes all three above)
+
+  ike-version-management-extension
+  (registered at every consumer build;
+   validates ${G·A} pins and ${G·A·policy})</code></pre>
  </div>
  <p>Members at the same level have no dependency on each other — <code>ike-tooling</code> and <code>ike-workspace-extension</code> can release in either order or in parallel.</p>
 </div>
@@ -296,8 +303,28 @@
  </table>
 </div>
 <div>
+ <h2 id="ike-java-support"><a href="#ike-java-support"></a><a id="ike-java-support"></a>IKE Java Support</h2>
+ <p>Shared, enforced-zero-dependency value types for the IKE Network: ConstantBackedEnum for compiler-visible constants, EnumDefinition for controlled-vocabulary enums, and the ReleasePolicy release-cascade policy ladder. See IKE-Network/ike-issues#498.</p>
+ <table class="bodyTable table table-striped table-hover" style="background: #FFFFFF">
+  <tbody>
+   <tr class="a">
+    <td style="text-align: left;">Version</td>
+    <td>1</td>
+   </tr>
+   <tr class="b">
+    <td style="text-align: left;">Site</td>
+    <td><a href="https://ike.network/ike-java-support/">ike.network/ike-java-support</a><sup class="visible-print-inline">[4]</sup></td>
+   </tr>
+   <tr class="a">
+    <td style="text-align: left;">GitHub</td>
+    <td><a href="https://github.com/IKE-Network/ike-java-support" class="externalLink">IKE-Network/ike-java-support</a><sup class="visible-print-inline">[5]</sup></td>
+   </tr>
+  </tbody>
+ </table>
+</div>
+<div>
  <h2 id="ike-tooling"><a href="#ike-tooling"></a><a id="ike-tooling"></a>IKE Tooling</h2>
- <p><span class="image"><a class="image externalLink" href="https://central.sonatype.com/artifact/network.ike.tooling/ike-tooling"><img src="https://img.shields.io/maven-central/v/network.ike.tooling/ike-tooling" alt="Maven Central"></a><sup class="visible-print-inline">[4]</sup></span></p>
+ <p><span class="image"><a class="image externalLink" href="https://central.sonatype.com/artifact/network.ike.tooling/ike-tooling"><img src="https://img.shields.io/maven-central/v/network.ike.tooling/ike-tooling" alt="Maven Central"></a><sup class="visible-print-inline">[6]</sup></span></p>
  <p>Workspace management, release orchestration, gitflow workflows, and build-time utilities for IKE Network projects.</p>
  <table class="bodyTable table table-striped table-hover" style="background: #FFFFFF">
   <tbody>
@@ -307,11 +334,11 @@
    </tr>
    <tr class="b">
     <td style="text-align: left;">Site</td>
-    <td><a href="https://ike.network/ike-tooling/">ike.network/ike-tooling</a><sup class="visible-print-inline">[5]</sup></td>
+    <td><a href="https://ike.network/ike-tooling/">ike.network/ike-tooling</a><sup class="visible-print-inline">[7]</sup></td>
    </tr>
    <tr class="a">
     <td style="text-align: left;">GitHub</td>
-    <td><a href="https://github.com/IKE-Network/ike-tooling" class="externalLink">IKE-Network/ike-tooling</a><sup class="visible-print-inline">[6]</sup></td>
+    <td><a href="https://github.com/IKE-Network/ike-tooling" class="externalLink">IKE-Network/ike-tooling</a><sup class="visible-print-inline">[8]</sup></td>
    </tr>
   </tbody>
  </table>
@@ -327,7 +354,7 @@
 </div>
 <div>
  <h2 id="ike-docs"><a href="#ike-docs"></a><a id="ike-docs"></a>IKE Docs</h2>
- <p><span class="image"><a class="image externalLink" href="https://central.sonatype.com/artifact/network.ike.docs/ike-docs"><img src="https://img.shields.io/maven-central/v/network.ike.docs/ike-docs" alt="Maven Central"></a><sup class="visible-print-inline">[7]</sup></span></p>
+ <p><span class="image"><a class="image externalLink" href="https://central.sonatype.com/artifact/network.ike.docs/ike-docs"><img src="https://img.shields.io/maven-central/v/network.ike.docs/ike-docs" alt="Maven Central"></a><sup class="visible-print-inline">[9]</sup></span></p>
  <p>Documentation plumbing for the IKE Network. Hosts the ike-doc-maven-plugin (ike-doc packaging, AsciiDoc/render pipeline, PDF dispatch), the Koncept AsciiDoc extension, DocBook XSL + fonts, shared doc resources, and the semantic linebreak reformatter. Split from ike-pipeline to resolve the extensions=true reactor-load cycle. See IKE-Network/ike-issues#216.</p>
  <table class="bodyTable table table-striped table-hover" style="background: #FFFFFF">
   <tbody>
@@ -337,11 +364,11 @@
    </tr>
    <tr class="b">
     <td style="text-align: left;">Site</td>
-    <td><a href="https://ike.network/ike-docs/">ike.network/ike-docs</a><sup class="visible-print-inline">[8]</sup></td>
+    <td><a href="https://ike.network/ike-docs/">ike.network/ike-docs</a><sup class="visible-print-inline">[10]</sup></td>
    </tr>
    <tr class="a">
     <td style="text-align: left;">GitHub</td>
-    <td><a href="https://github.com/IKE-Network/ike-docs" class="externalLink">IKE-Network/ike-docs</a><sup class="visible-print-inline">[9]</sup></td>
+    <td><a href="https://github.com/IKE-Network/ike-docs" class="externalLink">IKE-Network/ike-docs</a><sup class="visible-print-inline">[11]</sup></td>
    </tr>
   </tbody>
  </table>
@@ -359,7 +386,7 @@
 </div>
 <div>
  <h2 id="ike-workspace-extension"><a href="#ike-workspace-extension"></a><a id="ike-workspace-extension"></a>IKE Workspace Extension</h2>
- <p><span class="image"><a class="image externalLink" href="https://central.sonatype.com/artifact/network.ike.tooling/ike-workspace-extension"><img src="https://img.shields.io/maven-central/v/network.ike.tooling/ike-workspace-extension" alt="Maven Central"></a><sup class="visible-print-inline">[10]</sup></span></p>
+ <p><span class="image"><a class="image externalLink" href="https://central.sonatype.com/artifact/network.ike.tooling/ike-workspace-extension"><img src="https://img.shields.io/maven-central/v/network.ike.tooling/ike-workspace-extension" alt="Maven Central"></a><sup class="visible-print-inline">[12]</sup></span></p>
  <p>Maven 4 build extension that prunes non-existent &lt;subprojects&gt; entries from workspace POMs before model validation. Lets a fresh clone of an IKE workspace bootstrap with mvn ws:scaffold-init before any subproject directory is on disk.</p>
  <table class="bodyTable table table-striped table-hover" style="background: #FFFFFF">
   <tbody>
@@ -369,18 +396,38 @@
    </tr>
    <tr class="b">
     <td style="text-align: left;">Site</td>
-    <td><a href="https://ike.network/ike-workspace-extension/">ike.network/ike-workspace-extension</a><sup class="visible-print-inline">[11]</sup></td>
+    <td><a href="https://ike.network/ike-workspace-extension/">ike.network/ike-workspace-extension</a><sup class="visible-print-inline">[13]</sup></td>
    </tr>
    <tr class="a">
     <td style="text-align: left;">GitHub</td>
-    <td><a href="https://github.com/IKE-Network/ike-workspace-extension" class="externalLink">IKE-Network/ike-workspace-extension</a><sup class="visible-print-inline">[12]</sup></td>
+    <td><a href="https://github.com/IKE-Network/ike-workspace-extension" class="externalLink">IKE-Network/ike-workspace-extension</a><sup class="visible-print-inline">[14]</sup></td>
+   </tr>
+  </tbody>
+ </table>
+</div>
+<div>
+ <h2 id="ike-version-management-extension"><a href="#ike-version-management-extension"></a><a id="ike-version-management-extension"></a>IKE Version Management Extension</h2>
+ <p>Maven 4 build extension that implements the IKE GA·convention for version-property naming: ${groupId·artifactId} (U+00B7 MIDDLE DOT). Injects alias indirections from a bundled manifest, fails fast on undeclared ${G·A} references, and detects ${G.A} typos with a corrective hint. See IKE-Network/ike-issues#470, #472.</p>
+ <table class="bodyTable table table-striped table-hover" style="background: #FFFFFF">
+  <tbody>
+   <tr class="a">
+    <td style="text-align: left;">Version</td>
+    <td>1</td>
+   </tr>
+   <tr class="b">
+    <td style="text-align: left;">Site</td>
+    <td><a href="https://ike.network/ike-version-management-extension/">ike.network/ike-version-management-extension</a><sup class="visible-print-inline">[15]</sup></td>
+   </tr>
+   <tr class="a">
+    <td style="text-align: left;">GitHub</td>
+    <td><a href="https://github.com/IKE-Network/ike-version-management-extension" class="externalLink">IKE-Network/ike-version-management-extension</a><sup class="visible-print-inline">[16]</sup></td>
    </tr>
   </tbody>
  </table>
 </div>
 <div>
  <h2 id="ike-platform"><a href="#ike-platform"></a><a id="ike-platform"></a>IKE Platform</h2>
- <p><span class="image"><a class="image externalLink" href="https://central.sonatype.com/artifact/network.ike.platform/ike-platform"><img src="https://img.shields.io/maven-central/v/network.ike.platform/ike-platform" alt="Maven Central"></a><sup class="visible-print-inline">[13]</sup></span></p>
+ <p><span class="image"><a class="image externalLink" href="https://central.sonatype.com/artifact/network.ike.platform/ike-platform"><img src="https://img.shields.io/maven-central/v/network.ike.platform/ike-platform" alt="Maven Central"></a><sup class="visible-print-inline">[17]</sup></span></p>
  <p>Consumer-facing parent POM, BOM, and workspace management plugin for the IKE Network. External doc and code projects inherit from ike-parent (declared here); cross-repo workspace operations use ike-workspace-maven-plugin (ws:* goals). Consumes ike-docs as an external artifact — ike-parent declares ike-doc-maven-plugin with extensions=true, resolving from Nexus at project-load time. Split from the archived ike-pipeline; see IKE-Network/ike-issues#216.</p>
  <table class="bodyTable table table-striped table-hover" style="background: #FFFFFF">
   <tbody>
@@ -390,11 +437,11 @@
    </tr>
    <tr class="b">
     <td style="text-align: left;">Site</td>
-    <td><a href="https://ike.network/ike-platform/">ike.network/ike-platform</a><sup class="visible-print-inline">[14]</sup></td>
+    <td><a href="https://ike.network/ike-platform/">ike.network/ike-platform</a><sup class="visible-print-inline">[18]</sup></td>
    </tr>
    <tr class="a">
     <td style="text-align: left;">GitHub</td>
-    <td><a href="https://github.com/IKE-Network/ike-platform" class="externalLink">IKE-Network/ike-platform</a><sup class="visible-print-inline">[15]</sup></td>
+    <td><a href="https://github.com/IKE-Network/ike-platform" class="externalLink">IKE-Network/ike-platform</a><sup class="visible-print-inline">[19]</sup></td>
    </tr>
   </tbody>
  </table>
@@ -422,51 +469,11 @@
    </tr>
    <tr class="b">
     <td style="text-align: left;">Site</td>
-    <td><a href="https://ike.network/doc-example/">ike.network/doc-example</a><sup class="visible-print-inline">[16]</sup></td>
+    <td><a href="https://ike.network/doc-example/">ike.network/doc-example</a><sup class="visible-print-inline">[20]</sup></td>
    </tr>
    <tr class="a">
     <td style="text-align: left;">GitHub</td>
-    <td><a href="https://github.com/IKE-Network/doc-example" class="externalLink">IKE-Network/doc-example</a><sup class="visible-print-inline">[17]</sup></td>
-   </tr>
-  </tbody>
- </table>
-</div>
-<div>
- <h2 id="ike-java-support"><a href="#ike-java-support"></a><a id="ike-java-support"></a>IKE Java Support</h2>
- <p>Shared, enforced-zero-dependency value types for the IKE Network: ConstantBackedEnum for compiler-visible constants, EnumDefinition for controlled-vocabulary enums, and the ReleasePolicy release-cascade policy ladder. See IKE-Network/ike-issues#498.</p>
- <table class="bodyTable table table-striped table-hover" style="background: #FFFFFF">
-  <tbody>
-   <tr class="a">
-    <td style="text-align: left;">Version</td>
-    <td>1</td>
-   </tr>
-   <tr class="b">
-    <td style="text-align: left;">Site</td>
-    <td><a href="https://ike.network/ike-java-support/">ike.network/ike-java-support</a><sup class="visible-print-inline">[18]</sup></td>
-   </tr>
-   <tr class="a">
-    <td style="text-align: left;">GitHub</td>
-    <td><a href="https://github.com/IKE-Network/ike-java-support" class="externalLink">IKE-Network/ike-java-support</a><sup class="visible-print-inline">[19]</sup></td>
-   </tr>
-  </tbody>
- </table>
-</div>
-<div>
- <h2 id="ike-version-management-extension"><a href="#ike-version-management-extension"></a><a id="ike-version-management-extension"></a>IKE Version Management Extension</h2>
- <p>Maven 4 build extension that implements the IKE GA·convention for version-property naming: ${groupId·artifactId} (U+00B7 MIDDLE DOT). Injects alias indirections from a bundled manifest, fails fast on undeclared ${G·A} references, and detects ${G.A} typos with a corrective hint. See IKE-Network/ike-issues#470, #472.</p>
- <table class="bodyTable table table-striped table-hover" style="background: #FFFFFF">
-  <tbody>
-   <tr class="a">
-    <td style="text-align: left;">Version</td>
-    <td>1</td>
-   </tr>
-   <tr class="b">
-    <td style="text-align: left;">Site</td>
-    <td><a href="https://ike.network/ike-version-management-extension/">ike.network/ike-version-management-extension</a><sup class="visible-print-inline">[20]</sup></td>
-   </tr>
-   <tr class="a">
-    <td style="text-align: left;">GitHub</td>
-    <td><a href="https://github.com/IKE-Network/ike-version-management-extension" class="externalLink">IKE-Network/ike-version-management-extension</a><sup class="visible-print-inline">[21]</sup></td>
+    <td><a href="https://github.com/IKE-Network/doc-example" class="externalLink">IKE-Network/doc-example</a><sup class="visible-print-inline">[21]</sup></td>
    </tr>
   </tbody>
  </table>
@@ -563,24 +570,24 @@
 								<li>[1] https://central.sonatype.com/artifact/network.ike/ike-base-parent</li>
 								<li>[2] https://ike.network/ike-base-parent/</li>
 								<li>[3] https://github.com/IKE-Network/ike-base-parent</li>
-								<li>[4] https://central.sonatype.com/artifact/network.ike.tooling/ike-tooling</li>
-								<li>[5] https://ike.network/ike-tooling/</li>
-								<li>[6] https://github.com/IKE-Network/ike-tooling</li>
-								<li>[7] https://central.sonatype.com/artifact/network.ike.docs/ike-docs</li>
-								<li>[8] https://ike.network/ike-docs/</li>
-								<li>[9] https://github.com/IKE-Network/ike-docs</li>
-								<li>[10] https://central.sonatype.com/artifact/network.ike.tooling/ike-workspace-extension</li>
-								<li>[11] https://ike.network/ike-workspace-extension/</li>
-								<li>[12] https://github.com/IKE-Network/ike-workspace-extension</li>
-								<li>[13] https://central.sonatype.com/artifact/network.ike.platform/ike-platform</li>
-								<li>[14] https://ike.network/ike-platform/</li>
-								<li>[15] https://github.com/IKE-Network/ike-platform</li>
-								<li>[16] https://ike.network/doc-example/</li>
-								<li>[17] https://github.com/IKE-Network/doc-example</li>
-								<li>[18] https://ike.network/ike-java-support/</li>
-								<li>[19] https://github.com/IKE-Network/ike-java-support</li>
-								<li>[20] https://ike.network/ike-version-management-extension/</li>
-								<li>[21] https://github.com/IKE-Network/ike-version-management-extension</li>
+								<li>[4] https://ike.network/ike-java-support/</li>
+								<li>[5] https://github.com/IKE-Network/ike-java-support</li>
+								<li>[6] https://central.sonatype.com/artifact/network.ike.tooling/ike-tooling</li>
+								<li>[7] https://ike.network/ike-tooling/</li>
+								<li>[8] https://github.com/IKE-Network/ike-tooling</li>
+								<li>[9] https://central.sonatype.com/artifact/network.ike.docs/ike-docs</li>
+								<li>[10] https://ike.network/ike-docs/</li>
+								<li>[11] https://github.com/IKE-Network/ike-docs</li>
+								<li>[12] https://central.sonatype.com/artifact/network.ike.tooling/ike-workspace-extension</li>
+								<li>[13] https://ike.network/ike-workspace-extension/</li>
+								<li>[14] https://github.com/IKE-Network/ike-workspace-extension</li>
+								<li>[15] https://ike.network/ike-version-management-extension/</li>
+								<li>[16] https://github.com/IKE-Network/ike-version-management-extension</li>
+								<li>[17] https://central.sonatype.com/artifact/network.ike.platform/ike-platform</li>
+								<li>[18] https://ike.network/ike-platform/</li>
+								<li>[19] https://github.com/IKE-Network/ike-platform</li>
+								<li>[20] https://ike.network/doc-example/</li>
+								<li>[21] https://github.com/IKE-Network/doc-example</li>
 								<li>[22] https://ike.network/integration-tests-example/</li>
 								<li>[23] https://github.com/IKE-Network/integration-tests-example</li>
 								<li>[24] https://ike.network/project-example/</li>
@@ -589,7 +596,7 @@
 								<li>[27] https://github.com/IKE-Network/workspace-reactor-example</li>
 								</ul>
 							</div>
-<div class="date">Date: <strong>2026-05-24 10:28:12 -0700</strong></div>
+<div class="date">Date: <strong>2026-05-24 10:33:26 -0700</strong></div>
 						</div>
 						</div>
 					</div>
