@@ -52,7 +52,7 @@ Tier 0 foundation parent for the IKE Network — the apex of the parent inherita
 
 Workspace management, release orchestration, gitflow workflows, and build-time utilities for IKE Network projects.
 
-| Version | 198 |
+| Version | 199 |
 | --- | --- |
 | Site | [ike.network/ike-tooling](https://ike.network/ike-tooling/)[5] |
 | GitHub | [IKE-Network/ike-tooling](https://github.com/IKE-Network/ike-tooling)[6] |
@@ -60,7 +60,6 @@ Workspace management, release orchestration, gitflow workflows, and build-time u
 #### [#modules](#modules)Modules
 
 - ike-build-standards
-- ike-java-support
 - ike-workspace-model
 - ike-maven-plugin-support
 - ike-maven-plugin
