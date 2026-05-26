@@ -84,7 +84,7 @@ Documentation plumbing for the IKE Network. Hosts the ike-doc-maven-plugin (ike-
 
 Maven 4 build extension that prunes non-existent <subprojects> entries from workspace POMs before model validation. Lets a fresh clone of an IKE workspace bootstrap with mvn ws:scaffold-init before any subproject directory is on disk.
 
-| Version | 7 |
+| Version | 8 |
 | --- | --- |
 | Site | [ike.network/ike-workspace-extension](https://ike.network/ike-workspace-extension/)[14] |
 | GitHub | [IKE-Network/ike-workspace-extension](https://github.com/IKE-Network/ike-workspace-extension)[15] |
