@@ -93,9 +93,9 @@ Maven 4 build extension that prunes non-existent <subprojects> entries from work
 
 [https://central.sonatype.com/artifact/network.ike.tooling/ike-version-management-extension](https://central.sonatype.com/artifact/network.ike.tooling/ike-version-management-extension)[16]
 
-Maven 4 build extension that implements the IKE GA·convention for version-property naming: ${groupId·artifactId} (U+00B7 MIDDLE DOT). Injects alias indirections from a bundled manifest, fails fast on undeclared ${G·A} references, and detects ${G.A} typos with a corrective hint. See IKE-Network/ike-issues#470, #472.
+Maven 4 build extension that implements the IKE typed-marker family for version-property naming: ${groupId*GA*artifactId__VERSION}. Injects alias indirections from a bundled manifest, fails fast on undeclared canonical references, and detects ${G.A} typos with a corrective hint. Accepts the pre-#525 U+00B7 form during the transition. See IKE-Network/ike-issues#470, #472, #525.
 
-| Version | 6 |
+| Version | 7 |
 | --- | --- |
 | Site | [ike.network/ike-version-management-extension](https://ike.network/ike-version-management-extension/)[17] |
 | GitHub | [IKE-Network/ike-version-management-extension](https://github.com/IKE-Network/ike-version-management-extension)[18] |
