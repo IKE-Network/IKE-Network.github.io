@@ -35,7 +35,7 @@ Tier 0 foundation parent for the IKE Network — the apex of the parent inherita
 
 Shared, enforced-zero-dependency value types for the IKE Network: ConstantBackedEnum for compiler-visible constants, EnumDefinition for controlled-vocabulary enums, and the ReleasePolicy release-cascade policy ladder. See IKE-Network/ike-issues#498.
 
-| Version | 7 |
+| Version | 8 |
 | --- | --- |
 | Site | [ike.network/ike-java-support](https://ike.network/ike-java-support/)[5] |
 | GitHub | [IKE-Network/ike-java-support](https://github.com/IKE-Network/ike-java-support)[6] |
