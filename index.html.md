@@ -150,7 +150,7 @@ Example Java project demonstrating IKE documentation pipeline integration with J
 
 ## [#ike-workspace-reactor-example](#ike-workspace-reactor-example)IKE Workspace Reactor Example
 
-| Version | 23 |
+| Version | 24 |
 | --- | --- |
 | Site | [ike.network/workspace-reactor-example](https://ike.network/workspace-reactor-example/)[28] |
 | GitHub | [IKE-Network/workspace-reactor-example](https://github.com/IKE-Network/workspace-reactor-example)[29] |
