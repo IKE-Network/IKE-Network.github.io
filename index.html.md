@@ -64,7 +64,7 @@ Workspace management, release orchestration, gitflow workflows, and build-time u
 
 Documentation plumbing for the IKE Network. Hosts the ike-doc-maven-plugin (ike-doc packaging, AsciiDoc/render pipeline, PDF dispatch), the Koncept AsciiDoc extension, DocBook XSL + fonts, shared doc resources, and the semantic linebreak reformatter. Split from ike-pipeline to resolve the extensions=true reactor-load cycle. See IKE-Network/ike-issues#216.
 
-| Version | 66 |
+| Version | 67 |
 | --- | --- |
 | Site | [ike.network/ike-docs](https://ike.network/ike-docs/)[11] |
 | GitHub | [IKE-Network/ike-docs](https://github.com/IKE-Network/ike-docs)[12] |
@@ -77,6 +77,7 @@ Documentation plumbing for the IKE Network. Hosts the ike-doc-maven-plugin (ike-
 - koncept-asciidoc-extension
 - ike-doc-maven-plugin
 - semantic-linebreak
+- ike-doc-ingest
 
 ## [#ike-workspace-extension](#ike-workspace-extension)IKE Workspace Extension
 
