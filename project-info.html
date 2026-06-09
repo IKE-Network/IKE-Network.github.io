@@ -43,6 +43,7 @@
 			<ul class="nav navbar-nav">
 <li><a href="https://github.com/IKE-Network" class="externalLink">GitHub</a></li>
 <li><a href="https://github.com/IKE-Network/ike-issues" class="externalLink">Issues</a></li>
+<li><a href="brand.html">Brand</a></li>
 			</ul>
 		<ul class="nav navbar-nav navbar-right">
 <li class="dark-toggle"><toggle ng-model="$matchMedia.dark" ng-change="switchColors()" size="btn-xs" width="34px" height="22px" off-class="day" on-class="night" toggle-class="navbar-btn dark-toggle" on="<i class='fa-solid fa-moon'></i>" off="<i class='sun-icon'></i>" title="Switch between dark and light color schemes" tabindex="0"></toggle></li>
@@ -138,6 +139,7 @@
 
 <ul class="nav nav-pills nav-stacked animate">
 <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+<li><a href="brand.html"><i class="fas fa-file-alt"></i> Powered by IKE</a></li>
 </ul>
 		<h5 class="text-uppercase">Foundation</h5>
 
@@ -155,6 +157,7 @@
 <ul class="nav nav-pills nav-stacked animate">
 <li><a href="doc-example/"><i class="fas fa-file-alt"></i> doc-example</a></li>
 <li><a href="hl7-ig-corpus-example/"><i class="fas fa-file-alt"></i> hl7-ig-corpus-example</a></li>
+<li><a href="ike-network-site/"><i class="fas fa-file-alt"></i> ike-network-site</a></li>
 <li><a href="integration-tests-example/"><i class="fas fa-file-alt"></i> integration-tests-example</a></li>
 <li><a href="project-example/"><i class="fas fa-file-alt"></i> project-example</a></li>
 <li><a href="workspace-reactor-example/"><i class="fas fa-file-alt"></i> workspace-reactor-example</a></li>
@@ -171,6 +174,7 @@
 <li><a href="https://github.com/IKE-Network/ike-platform"><i class="fas fa-file-alt"></i> ike-platform</a></li>
 <li><a href="https://github.com/IKE-Network/doc-example"><i class="fas fa-file-alt"></i> doc-example</a></li>
 <li><a href="https://github.com/IKE-Network/hl7-ig-corpus-example"><i class="fas fa-file-alt"></i> hl7-ig-corpus-example</a></li>
+<li><a href="https://github.com/IKE-Network/ike-network-site"><i class="fas fa-file-alt"></i> ike-network-site</a></li>
 <li><a href="https://github.com/IKE-Network/integration-tests-example"><i class="fas fa-file-alt"></i> integration-tests-example</a></li>
 <li><a href="https://github.com/IKE-Network/project-example"><i class="fas fa-file-alt"></i> project-example</a></li>
 <li><a href="https://github.com/IKE-Network/workspace-reactor-example"><i class="fas fa-file-alt"></i> workspace-reactor-example</a></li>
@@ -374,6 +378,7 @@
 			<li><a href="index.html">IKE Network</a></li>
 <li><a href="https://github.com/IKE-Network" class="externalLink">GitHub</a></li>
 <li><a href="https://github.com/IKE-Network/ike-issues" class="externalLink">Issues</a></li>
+<li><a href="brand.html">Brand</a></li>
 <li class="dark-toggle dark-toggle-xs">
     <toggle
         ng-model="$matchMedia.dark"
@@ -409,6 +414,11 @@ angular.module("sentry.site").constant("SITE_MENU", [
 {
 	path: "index.html",
 	title: "Home",
+	parents: [{ title: "IKE Network" }]
+},
+{
+	path: "brand.html",
+	title: "Powered by IKE",
 	parents: [{ title: "IKE Network" }]
 },
 {
@@ -454,6 +464,11 @@ angular.module("sentry.site").constant("SITE_MENU", [
 {
 	path: "hl7-ig-corpus-example/",
 	title: "hl7-ig-corpus-example",
+	parents: [{ title: "Examples" }]
+},
+{
+	path: "ike-network-site/",
+	title: "ike-network-site",
 	parents: [{ title: "Examples" }]
 },
 {
@@ -514,6 +529,11 @@ angular.module("sentry.site").constant("SITE_MENU", [
 {
 	path: "https://github.com/IKE-Network/hl7-ig-corpus-example",
 	title: "hl7-ig-corpus-example",
+	parents: [{ title: "Source" }]
+},
+{
+	path: "https://github.com/IKE-Network/ike-network-site",
+	title: "ike-network-site",
 	parents: [{ title: "Source" }]
 },
 {
