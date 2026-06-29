@@ -5,11 +5,11 @@
 ## IKE Network
 
 - [Powered by IKE](https://ike.network/brand.html.md)
+- [The Komet Checkpoint Pipeline](https://ike.network/checkpoint-pipeline.html.md)
 - [IKE Network](https://ike.network/index.html.md)
 
 ## Other
 
-- [The Komet Checkpoint Pipeline](https://ike.network/checkpoint-pipeline.html.md)
 - [Maven Coordinates](https://ike.network/dependency-info.html.md)
 - [Project Distribution Management](https://ike.network/distribution-management.html.md)
 - [Project Licenses](https://ike.network/licenses.html.md)
