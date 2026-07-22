@@ -152,6 +152,7 @@
 <li><a href="ike-workspace-extension/"><i class="fas fa-file-alt"></i> IKE Workspace Extension</a></li>
 <li><a href="ike-version-management-extension/"><i class="fas fa-file-alt"></i> IKE Version Management Extension</a></li>
 <li><a href="ike-platform/"><i class="fas fa-file-alt"></i> IKE Platform</a></li>
+<li><a href="ike-starter-set/"><i class="fas fa-file-alt"></i> IKE Starter Set</a></li>
 </ul>
 		<h5 class="text-uppercase">Examples</h5>
 
@@ -159,7 +160,6 @@
 <li><a href="doc-example/"><i class="fas fa-file-alt"></i> doc-example</a></li>
 <li><a href="hl7-ig-corpus-example/"><i class="fas fa-file-alt"></i> hl7-ig-corpus-example</a></li>
 <li><a href="ike-network-site/"><i class="fas fa-file-alt"></i> ike-network-site</a></li>
-<li><a href="ike-starter-set/"><i class="fas fa-file-alt"></i> ike-starter-set</a></li>
 <li><a href="integration-tests-example/"><i class="fas fa-file-alt"></i> integration-tests-example</a></li>
 <li><a href="project-example/"><i class="fas fa-file-alt"></i> project-example</a></li>
 <li><a href="workspace-reactor-example/"><i class="fas fa-file-alt"></i> workspace-reactor-example</a></li>
@@ -174,10 +174,10 @@
 <li><a href="https://github.com/IKE-Network/ike-workspace-extension"><i class="fas fa-file-alt"></i> ike-workspace-extension</a></li>
 <li><a href="https://github.com/IKE-Network/ike-version-management-extension"><i class="fas fa-file-alt"></i> ike-version-management-extension</a></li>
 <li><a href="https://github.com/IKE-Network/ike-platform"><i class="fas fa-file-alt"></i> ike-platform</a></li>
+<li><a href="https://github.com/IKE-Network/ike-starter-set"><i class="fas fa-file-alt"></i> ike-starter-set</a></li>
 <li><a href="https://github.com/IKE-Network/doc-example"><i class="fas fa-file-alt"></i> doc-example</a></li>
 <li><a href="https://github.com/IKE-Network/hl7-ig-corpus-example"><i class="fas fa-file-alt"></i> hl7-ig-corpus-example</a></li>
 <li><a href="https://github.com/IKE-Network/ike-network-site"><i class="fas fa-file-alt"></i> ike-network-site</a></li>
-<li><a href="https://github.com/IKE-Network/ike-starter-set"><i class="fas fa-file-alt"></i> ike-starter-set</a></li>
 <li><a href="https://github.com/IKE-Network/integration-tests-example"><i class="fas fa-file-alt"></i> integration-tests-example</a></li>
 <li><a href="https://github.com/IKE-Network/project-example"><i class="fas fa-file-alt"></i> project-example</a></li>
 <li><a href="https://github.com/IKE-Network/workspace-reactor-example"><i class="fas fa-file-alt"></i> workspace-reactor-example</a></li>
@@ -231,6 +231,9 @@
 												<a class="list-group-item" href="ike-platform/">
 													<i class="fas fa-file-alt"></i>IKE Platform
 												</a>
+												<a class="list-group-item" href="ike-starter-set/">
+													<i class="fas fa-file-alt"></i>IKE Starter Set
+												</a>
 										<li class="list-group-item"><i class="fas fa-folder-open"></i>Examples</li>
 												<a class="list-group-item" href="doc-example/">
 													<i class="fas fa-file-alt"></i>doc-example
@@ -240,9 +243,6 @@
 												</a>
 												<a class="list-group-item" href="ike-network-site/">
 													<i class="fas fa-file-alt"></i>ike-network-site
-												</a>
-												<a class="list-group-item" href="ike-starter-set/">
-													<i class="fas fa-file-alt"></i>ike-starter-set
 												</a>
 												<a class="list-group-item" href="integration-tests-example/">
 													<i class="fas fa-file-alt"></i>integration-tests-example
@@ -275,6 +275,9 @@
 												<a class="list-group-item" href="https://github.com/IKE-Network/ike-platform">
 													<i class="fas fa-file-alt"></i>ike-platform
 												</a>
+												<a class="list-group-item" href="https://github.com/IKE-Network/ike-starter-set">
+													<i class="fas fa-file-alt"></i>ike-starter-set
+												</a>
 												<a class="list-group-item" href="https://github.com/IKE-Network/doc-example">
 													<i class="fas fa-file-alt"></i>doc-example
 												</a>
@@ -283,9 +286,6 @@
 												</a>
 												<a class="list-group-item" href="https://github.com/IKE-Network/ike-network-site">
 													<i class="fas fa-file-alt"></i>ike-network-site
-												</a>
-												<a class="list-group-item" href="https://github.com/IKE-Network/ike-starter-set">
-													<i class="fas fa-file-alt"></i>ike-starter-set
 												</a>
 												<a class="list-group-item" href="https://github.com/IKE-Network/integration-tests-example">
 													<i class="fas fa-file-alt"></i>integration-tests-example
@@ -305,7 +305,7 @@
  <p>The IKE foundation — published to Maven Central and inheritable by any project.</p>
  <p>The foundation members fall into two layered orderings. <code>ike-base-parent</code> sits at the apex of the <strong>parent</strong> inheritance chain — every other foundation artifact inherits from it. <code>ike-platform</code> sits at the terminus of the <strong>build-and-release</strong> dependency chain — releases propagate through it last.</p>
  <div>
-  <img src="https://kroki.komet.sh/graphviz/svg/eNqFUstu2zAQvPsrCPXSIBZgx1BaI1APPfUDenOCYCWuZMYUSZCUErfIv2dXVGypl-okzr5mdlaq1oM7isb2RkJU1oi_KyE8mJNUvvz984FeVVtbbX0ZCQ4OPJrIcG07x2WE98iAsRLFIRzBYVnZt7UI8ayxzDxnoVw3SmuU2ZqmmWigo9Av1ANGVcOEBvUHy-2WHpSbpmZf8HtT4J4yPoE7_CZ3d9kTD0XZ0tD_dNxfa4vx41pWBgGFOGioUJeZOmHOSJ40Ppqv6UdYo8832ZJU0zQ73MxI4X2x3WwSqZfQu2XfFxggJ9RZz40H0D2KeHYYblJJtFYvSxhRpk3h14BvcRF-tf5EbtSYUwRNIO9SqrR1WHZiJMWchriMMdJY3803kv9ICg7JQAnhSPaJqUqkrcyUUj6Tnb9HvhddBDCHCzt689yrsAtASOirdJS17kNE_zx0OF6lmA5K2hhRPozI5_bvYVvtIUvgRNRjq7gBSkGqcUB_pnwT-g69qHql5aMhIxQdPobRDJl34E8UdcoEcSscOVArDFPf64VuEsDM5sukEewDdTHQYkdbmpnzz_3ssGiK2f1MCsatvq_eVx-IkS0e" alt="Build/release dependency order">
+  <img src="images/foundation-dependency.svg" alt="Build/release dependency order">
   <div style="color: #7a2518; margin-bottom: .25em">Figure 1. Build/release dependency order</div>
  </div>
  <p>Members at the same level have no dependency on each other — <code>ike-tooling</code> and <code>ike-workspace-extension</code> can release in either order or in parallel.</p>
@@ -488,6 +488,36 @@
  </div>
 </div>
 <div>
+ <h2 id="ike-starter-set"><a href="#ike-starter-set"></a><a id="ike-starter-set"></a>Ike Starter Set</h2>
+ <p>IkeFoundation starter set: the ledger-form content set for Ike. The source is an append-only version ledger (declared stamps, birth-FQN identity); building replays the ledger; the released artifact is a change set. Generated by ike:starter-set-create; the SOP is the dev-knowledge-set-sop topic family in ike-lab-documents.</p>
+ <table class="bodyTable table table-striped table-hover" style="background: #FFFFFF">
+  <tbody>
+   <tr class="a">
+    <td style="text-align: left;">Version</td>
+    <td>1-chronology-builder</td>
+   </tr>
+   <tr class="b">
+    <td style="text-align: left;">Site</td>
+    <td><a href="https://ike.network/ike-starter-set/">ike.network/ike-starter-set</a><sup class="visible-print-inline">[22]</sup></td>
+   </tr>
+   <tr class="a">
+    <td style="text-align: left;">GitHub</td>
+    <td><a href="https://github.com/IKE-Network/ike-starter-set" class="externalLink">IKE-Network/ike-starter-set</a><sup class="visible-print-inline">[23]</sup></td>
+   </tr>
+  </tbody>
+ </table>
+ <div>
+  <h4 id="modules_4"><a href="#modules_4"></a><a id="modules-4"></a>Modules</h4>
+  <ul>
+   <li>ike-terms</li>
+   <li>ike-bindings</li>
+   <li>ike-changeset</li>
+   <li>ike-doc</li>
+   <li>ike-kb</li>
+  </ul>
+ </div>
+</div>
+<div>
  <h2 id="examples"><a href="#examples"></a><a id="examples"></a>Examples</h2>
  <p>Reference projects that show how to consume the IKE foundation. They are deliberately <strong>not</strong> published to Maven Central: they are worked examples to read and copy, not libraries to depend on. Publishing them as artifacts would invite accidental coupling to code that exists only to illustrate a pattern.</p>
 </div>
@@ -502,11 +532,11 @@
    </tr>
    <tr class="b">
     <td style="text-align: left;">Site</td>
-    <td><a href="https://ike.network/doc-example/">ike.network/doc-example</a><sup class="visible-print-inline">[22]</sup></td>
+    <td><a href="https://ike.network/doc-example/">ike.network/doc-example</a><sup class="visible-print-inline">[24]</sup></td>
    </tr>
    <tr class="a">
     <td style="text-align: left;">GitHub</td>
-    <td><a href="https://github.com/IKE-Network/doc-example" class="externalLink">IKE-Network/doc-example</a><sup class="visible-print-inline">[23]</sup></td>
+    <td><a href="https://github.com/IKE-Network/doc-example" class="externalLink">IKE-Network/doc-example</a><sup class="visible-print-inline">[25]</sup></td>
    </tr>
   </tbody>
  </table>
@@ -522,16 +552,16 @@
    </tr>
    <tr class="b">
     <td style="text-align: left;">Site</td>
-    <td><a href="https://ike.network/hl7-ig-corpus-example/">ike.network/hl7-ig-corpus-example</a><sup class="visible-print-inline">[24]</sup></td>
+    <td><a href="https://ike.network/hl7-ig-corpus-example/">ike.network/hl7-ig-corpus-example</a><sup class="visible-print-inline">[26]</sup></td>
    </tr>
    <tr class="a">
     <td style="text-align: left;">GitHub</td>
-    <td><a href="https://github.com/IKE-Network/hl7-ig-corpus-example" class="externalLink">IKE-Network/hl7-ig-corpus-example</a><sup class="visible-print-inline">[25]</sup></td>
+    <td><a href="https://github.com/IKE-Network/hl7-ig-corpus-example" class="externalLink">IKE-Network/hl7-ig-corpus-example</a><sup class="visible-print-inline">[27]</sup></td>
    </tr>
   </tbody>
  </table>
  <div>
-  <h4 id="modules_4"><a href="#modules_4"></a><a id="modules-4"></a>Modules</h4>
+  <h4 id="modules_5"><a href="#modules_5"></a><a id="modules-5"></a>Modules</h4>
   <ul>
    <li>ingest</li>
    <li>topics</li>
@@ -553,44 +583,14 @@
    </tr>
    <tr class="b">
     <td style="text-align: left;">Site</td>
-    <td><a href="https://ike.network/ike-network-site/">ike.network/ike-network-site</a><sup class="visible-print-inline">[26]</sup></td>
+    <td><a href="https://ike.network/ike-network-site/">ike.network/ike-network-site</a><sup class="visible-print-inline">[28]</sup></td>
    </tr>
    <tr class="a">
     <td style="text-align: left;">GitHub</td>
-    <td><a href="https://github.com/IKE-Network/ike-network-site" class="externalLink">IKE-Network/ike-network-site</a><sup class="visible-print-inline">[27]</sup></td>
+    <td><a href="https://github.com/IKE-Network/ike-network-site" class="externalLink">IKE-Network/ike-network-site</a><sup class="visible-print-inline">[29]</sup></td>
    </tr>
   </tbody>
  </table>
-</div>
-<div>
- <h2 id="ike-starter-set"><a href="#ike-starter-set"></a><a id="ike-starter-set"></a>Ike Starter Set</h2>
- <p>IkeFoundation starter set: the ledger-form content set for Ike. The source is an append-only version ledger (declared stamps, birth-FQN identity); building replays the ledger; the released artifact is a change set. Generated by ike:starter-set-create; the SOP is the dev-knowledge-set-sop topic family in ike-lab-documents.</p>
- <table class="bodyTable table table-striped table-hover" style="background: #FFFFFF">
-  <tbody>
-   <tr class="a">
-    <td style="text-align: left;">Version</td>
-    <td>1-chronology-builder</td>
-   </tr>
-   <tr class="b">
-    <td style="text-align: left;">Site</td>
-    <td><a href="https://ike.network/ike-starter-set/">ike.network/ike-starter-set</a><sup class="visible-print-inline">[28]</sup></td>
-   </tr>
-   <tr class="a">
-    <td style="text-align: left;">GitHub</td>
-    <td><a href="https://github.com/IKE-Network/ike-starter-set" class="externalLink">IKE-Network/ike-starter-set</a><sup class="visible-print-inline">[29]</sup></td>
-   </tr>
-  </tbody>
- </table>
- <div>
-  <h4 id="modules_5"><a href="#modules_5"></a><a id="modules-5"></a>Modules</h4>
-  <ul>
-   <li>ike-terms</li>
-   <li>ike-bindings</li>
-   <li>ike-changeset</li>
-   <li>ike-doc</li>
-   <li>ike-kb</li>
-  </ul>
- </div>
 </div>
 <div>
  <h2 id="ike-integration-tests-example"><a href="#ike-integration-tests-example"></a><a id="ike-integration-tests-example"></a>IKE Integration Tests Example</h2>
@@ -704,14 +704,14 @@
 								<li>[19] https://central.sonatype.com/artifact/network.ike.platform/ike-platform</li>
 								<li>[20] https://ike.network/ike-platform/</li>
 								<li>[21] https://github.com/IKE-Network/ike-platform</li>
-								<li>[22] https://ike.network/doc-example/</li>
-								<li>[23] https://github.com/IKE-Network/doc-example</li>
-								<li>[24] https://ike.network/hl7-ig-corpus-example/</li>
-								<li>[25] https://github.com/IKE-Network/hl7-ig-corpus-example</li>
-								<li>[26] https://ike.network/ike-network-site/</li>
-								<li>[27] https://github.com/IKE-Network/ike-network-site</li>
-								<li>[28] https://ike.network/ike-starter-set/</li>
-								<li>[29] https://github.com/IKE-Network/ike-starter-set</li>
+								<li>[22] https://ike.network/ike-starter-set/</li>
+								<li>[23] https://github.com/IKE-Network/ike-starter-set</li>
+								<li>[24] https://ike.network/doc-example/</li>
+								<li>[25] https://github.com/IKE-Network/doc-example</li>
+								<li>[26] https://ike.network/hl7-ig-corpus-example/</li>
+								<li>[27] https://github.com/IKE-Network/hl7-ig-corpus-example</li>
+								<li>[28] https://ike.network/ike-network-site/</li>
+								<li>[29] https://github.com/IKE-Network/ike-network-site</li>
 								<li>[30] https://ike.network/integration-tests-example/</li>
 								<li>[31] https://github.com/IKE-Network/integration-tests-example</li>
 								<li>[32] https://ike.network/project-example/</li>
@@ -720,7 +720,7 @@
 								<li>[35] https://github.com/IKE-Network/workspace-reactor-example</li>
 								</ul>
 							</div>
-<div class="date">Date: <strong>2026-07-21 21:55:21 -0700</strong></div>
+<div class="date">Date: <strong>2026-07-21 22:52:14 -0700</strong></div>
 						</div>
 						</div>
 					</div>
@@ -892,6 +892,11 @@ angular.module("sentry.site").constant("SITE_MENU", [
 	parents: [{ title: "Foundation" }]
 },
 {
+	path: "ike-starter-set/",
+	title: "IKE Starter Set",
+	parents: [{ title: "Foundation" }]
+},
+{
 	path: "doc-example/",
 	title: "doc-example",
 	parents: [{ title: "Examples" }]
@@ -904,11 +909,6 @@ angular.module("sentry.site").constant("SITE_MENU", [
 {
 	path: "ike-network-site/",
 	title: "ike-network-site",
-	parents: [{ title: "Examples" }]
-},
-{
-	path: "ike-starter-set/",
-	title: "ike-starter-set",
 	parents: [{ title: "Examples" }]
 },
 {
@@ -962,6 +962,11 @@ angular.module("sentry.site").constant("SITE_MENU", [
 	parents: [{ title: "Source" }]
 },
 {
+	path: "https://github.com/IKE-Network/ike-starter-set",
+	title: "ike-starter-set",
+	parents: [{ title: "Source" }]
+},
+{
 	path: "https://github.com/IKE-Network/doc-example",
 	title: "doc-example",
 	parents: [{ title: "Source" }]
@@ -974,11 +979,6 @@ angular.module("sentry.site").constant("SITE_MENU", [
 {
 	path: "https://github.com/IKE-Network/ike-network-site",
 	title: "ike-network-site",
-	parents: [{ title: "Source" }]
-},
-{
-	path: "https://github.com/IKE-Network/ike-starter-set",
-	title: "ike-starter-set",
 	parents: [{ title: "Source" }]
 },
 {
