@@ -108,7 +108,7 @@ Maven 4 build extension that implements the IKE typed-marker family for version-
 
 Consumer-facing parent POM, BOM, and workspace management plugin for the IKE Network. External doc and code projects inherit from ike-parent (declared here); cross-repo workspace operations use ike-workspace-maven-plugin (ws:* goals). Consumes ike-docs as an external artifact — ike-parent declares ike-doc-maven-plugin with extensions=true, resolving from Nexus at project-load time. Split from the archived ike-pipeline; see IKE-Network/ike-issues#216.
 
-| Version | 100 |
+| Version | 141 |
 | --- | --- |
 | Site | [ike.network/ike-platform](https://ike.network/ike-platform/)[20] |
 | GitHub | [IKE-Network/ike-platform](https://github.com/IKE-Network/ike-platform)[21] |
