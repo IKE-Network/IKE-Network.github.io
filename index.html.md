@@ -182,7 +182,7 @@ Organization landing page for IKE Network projects.
 
 End-to-end smoke tests that exercise the IKE Network release cascade as external consumers would. Each IT case clones the intended usage pattern (doc-only project, java + docs, BOM import, ws:create scaffold) in a fresh Maven environment and asserts that the build succeeds and produces the expected artifacts.
 
-| Version | 25 |
+| Version | 26 |
 | --- | --- |
 | Site | [ike.network/integration-tests-example](https://ike.network/integration-tests-example/)[30] |
 | GitHub | [IKE-Network/integration-tests-example](https://github.com/IKE-Network/integration-tests-example)[31] |
