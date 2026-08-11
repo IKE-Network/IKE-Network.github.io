@@ -146,7 +146,7 @@ Reference projects that show how to consume the IKE foundation. They are deliber
 
 Documentation-only project demonstrating the IKE AsciiDoc pipeline. Exercises all diagram types, Koncept macros, typography, and layout features across all 6 PDF renderers.
 
-| Version | 33 |
+| Version | 34 |
 | --- | --- |
 | Site | [ike.network/doc-example](https://ike.network/doc-example/)[24] |
 | GitHub | [IKE-Network/doc-example](https://github.com/IKE-Network/doc-example)[25] |
