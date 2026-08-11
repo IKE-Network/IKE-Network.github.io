@@ -191,7 +191,7 @@ End-to-end smoke tests that exercise the IKE Network release cascade as external
 
 Example Java project demonstrating IKE documentation pipeline integration with Java source, tests, and Koncept macros.
 
-| Version | 33 |
+| Version | 34 |
 | --- | --- |
 | Site | [ike.network/project-example](https://ike.network/project-example/)[32] |
 | GitHub | [IKE-Network/project-example](https://github.com/IKE-Network/project-example)[33] |
