@@ -140,6 +140,7 @@
 <ul class="nav nav-pills nav-stacked animate">
 <li class="active"><a href="index.html" ng-click="hideSubItems = !hideSubItems"><i class="fas fa-home"></i> Home</a></li>
 <li><a href="brand.html"><i class="fas fa-file-alt"></i> Powered by IKE</a></li>
+<li><a href="release-pipeline.html"><i class="fas fa-file-alt"></i> Release Pipeline</a></li>
 <li><a href="checkpoint-pipeline.html"><i class="fas fa-file-alt"></i> Checkpoint Pipeline</a></li>
 </ul>
 		<h5 class="text-uppercase">Foundation</h5>
@@ -205,6 +206,9 @@
 												</a>
 												<a class="list-group-item" href="brand.html">
 													<i class="fas fa-file-alt"></i>Powered by IKE
+												</a>
+												<a class="list-group-item" href="release-pipeline.html">
+													<i class="fas fa-file-alt"></i>Release Pipeline
 												</a>
 												<a class="list-group-item" href="checkpoint-pipeline.html">
 													<i class="fas fa-file-alt"></i>Checkpoint Pipeline
@@ -722,7 +726,7 @@
 								<li>[35] https://github.com/IKE-Network/workspace-reactor-example</li>
 								</ul>
 							</div>
-<div class="date">Date: <strong>2026-08-22 15:15:57 -0700</strong></div>
+<div class="date">Date: <strong>2026-08-22 15:55:02 -0700</strong></div>
 						</div>
 						</div>
 					</div>
@@ -851,6 +855,11 @@ angular.module("sentry.site").constant("SITE_MENU", [
 {
 	path: "brand.html",
 	title: "Powered by IKE",
+	parents: [{ title: "IKE Network" }]
+},
+{
+	path: "release-pipeline.html",
+	title: "Release Pipeline",
 	parents: [{ title: "IKE Network" }]
 },
 {
