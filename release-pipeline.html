@@ -160,7 +160,6 @@
 <ul class="nav nav-pills nav-stacked animate">
 <li><a href="doc-example/"><i class="fas fa-file-alt"></i> doc-example</a></li>
 <li><a href="hl7-ig-corpus-example/"><i class="fas fa-file-alt"></i> hl7-ig-corpus-example</a></li>
-<li><a href="ike-lease/"><i class="fas fa-file-alt"></i> ike-lease</a></li>
 <li><a href="ike-network-site/"><i class="fas fa-file-alt"></i> ike-network-site</a></li>
 <li><a href="integration-tests-example/"><i class="fas fa-file-alt"></i> integration-tests-example</a></li>
 <li><a href="project-example/"><i class="fas fa-file-alt"></i> project-example</a></li>
@@ -179,7 +178,6 @@
 <li><a href="https://github.com/IKE-Network/ike-starter-set"><i class="fas fa-file-alt"></i> ike-starter-set</a></li>
 <li><a href="https://github.com/IKE-Network/doc-example"><i class="fas fa-file-alt"></i> doc-example</a></li>
 <li><a href="https://github.com/IKE-Network/hl7-ig-corpus-example"><i class="fas fa-file-alt"></i> hl7-ig-corpus-example</a></li>
-<li><a href="https://github.com/IKE-Network/ike-lease"><i class="fas fa-file-alt"></i> ike-lease</a></li>
 <li><a href="https://github.com/IKE-Network/ike-network-site"><i class="fas fa-file-alt"></i> ike-network-site</a></li>
 <li><a href="https://github.com/IKE-Network/integration-tests-example"><i class="fas fa-file-alt"></i> integration-tests-example</a></li>
 <li><a href="https://github.com/IKE-Network/project-example"><i class="fas fa-file-alt"></i> project-example</a></li>
@@ -221,7 +219,7 @@
 											</ul>
 						</div>
 <h1 id="the-ike-release-pipeline">The IKE Release Pipeline</h1>
-<p>A <strong>release</strong> turns one repository at a <code>SNAPSHOT</code> version into an immutable, signed, published artifact set — tagged in git, deployed to Nexus (and, for the foundation, to Maven Central), announced as a GitHub Release with generated notes. One command, <a href="https://ike.network/ike-tooling/latest/ike-maven-plugin/index.html#release-publish"><code>ike:release-publish</code></a>, runs it; a TeamCity cascade chains releases across the whole foundation in dependency order with one button.</p>
+<p>A <strong>release</strong> turns one repository at a <code>SNAPSHOT</code> version into an immutable, signed, published artifact set — tagged in git, deployed to Nexus (and, for the foundation, to Maven Central), announced as a GitHub Release with generated notes. One command, <code>ike:release-publish</code>, runs it; a TeamCity cascade chains releases across the whole foundation in dependency order with one button.</p>
 <p>This page explains the machinery end to end: the gates and the local cut, the external deploys, and the CI cascade. It is written for two readers — an <strong>operator</strong> who needs to cut a release, and an <strong>engineer</strong> who needs to understand or change how the pipeline works. Each stage closes with a <strong>Where the machinery lives</strong> note pointing into the source. Its sibling page, <a href="checkpoint-pipeline.html">the Komet Checkpoint Pipeline</a><sup class="visible-print-inline">[1]</sup>, covers the other publication path: workspace-wide snapshots that become installers rather than versioned artifacts.</p>
 <div>
  <h2 id="the-three-stages"><a href="#the-three-stages"></a><a id="the-three-stages"></a>The three stages</h2>
@@ -239,7 +237,7 @@
   <tbody>
    <tr class="b">
     <td style="text-align: left;"><strong>1 · Draft &amp; Cut</strong></td>
-    <td><a href="https://ike.network/ike-tooling/latest/ike-maven-plugin/index.html#release-draft"><code>ike:release-draft</code></a> previews the whole plan without writing; then <a href="https://ike.network/ike-tooling/latest/ike-maven-plugin/index.html#release-publish"><code>ike:release-publish</code></a> runs the gates, builds and verifies the release state, and completes <strong>all</strong> git work — tag <code>v&lt;N&gt;</code>, merge to <code>main</code>, bump to the next <code>SNAPSHOT</code> — before anything external happens.</td>
+    <td><code>ike:release-draft</code> previews the whole plan without writing; then <code>ike:release-publish</code> runs the gates, builds and verifies the release state, and completes <strong>all</strong> git work — tag <code>v&lt;N&gt;</code>, merge to <code>main</code>, bump to the next <code>SNAPSHOT</code> — before anything external happens.</td>
     <td>Operator’s machine or CI agent, via the <code>ike</code> plugin (<code>ike-tooling</code>).</td>
    </tr>
    <tr class="a">
@@ -249,7 +247,7 @@
    </tr>
    <tr class="b">
     <td style="text-align: left;"><strong>3 · Cascade</strong></td>
-    <td>Downstream repositories release in dependency order — locally via <a href="https://ike.network/ike-tooling/latest/ike-maven-plugin/index.html#release-cascade"><code>ike:release-cascade</code></a>, or one-button on TeamCity, where finish-build triggers chain the seven foundation release configurations.</td>
+    <td>Downstream repositories release in dependency order — locally via <code>ike:release-cascade</code>, or one-button on TeamCity, where finish-build triggers chain the seven foundation release configurations.</td>
     <td>CI (TeamCity project <strong>IkeFoundation</strong>, agent <code>kec</code>).</td>
    </tr>
   </tbody>
@@ -260,11 +258,11 @@
  <p>The goal ships as a <strong>draft / publish pair</strong> — the same convention used throughout the IKE plugins — so you can preview before you mutate:</p>
  <dl>
   <dt>
-   <a href="https://ike.network/ike-tooling/latest/ike-maven-plugin/index.html#release-draft"><code>ike:release-draft</code></a>
+   <code>ike:release-draft</code>
   </dt>
   <dd>Read-only preview. Resolves the release version, runs the gates, and prints the exact plan — version movement, the reproducible build timestamp, every deploy target, and the point where local work ends and external actions begin — writing nothing.</dd>
   <dt>
-   <a href="https://ike.network/ike-tooling/latest/ike-maven-plugin/index.html#release-publish"><code>ike:release-publish</code></a>
+   <code>ike:release-publish</code>
   </dt>
   <dd>
    The mutation. It refuses to start unless the gates pass, in order:
@@ -286,7 +284,7 @@
 # 2. Cut and publish
 op run --env-file ~/.config/ike/release.env -- ./mvnw ike:release-publish -B</code></pre>
  </div>
- <p>The public step-by-step how-to, including failure recovery, is <a href="https://ike.network/ike-platform/cutting-a-release.html">Cutting a Release</a><sup class="visible-print-inline">[2]</sup> on the <code>ike-platform</code> site. Workspace-scoped releases (a workspace reactor and its subprojects as one train) ride the same engine through the <a href="https://ike.network/ike-platform/latest/ike-workspace-maven-plugin/ws-goals.html#release-draft"><code>ws:release-draft</code></a> / <a href="https://ike.network/ike-platform/latest/ike-workspace-maven-plugin/ws-goals.html#release-publish"><code>ws:release-publish</code></a> pair.</p>
+ <p>The public step-by-step how-to, including failure recovery, is <a href="https://ike.network/ike-platform/cutting-a-release.html">Cutting a Release</a><sup class="visible-print-inline">[2]</sup> on the <code>ike-platform</code> site. Workspace-scoped releases (a workspace reactor and its subprojects as one train) ride the same engine through the <code>ws:release-draft</code> / <code>ws:release-publish</code> pair.</p>
  <div>
   <div style="color: #7a2518; margin-bottom: .25em">Where the machinery lives</div>
   <div style="background: #fffef7; border-color: #e0e0dc; border: 1px solid #e6e6e6; box-shadow: 0 1px 4px #e0e0dc; margin-bottom: 1.25em; padding: 1.25em">
@@ -308,21 +306,21 @@ op run --env-file ~/.config/ike/release.env -- ./mvnw ike:release-publish -B</co
  <ul>
   <li>a <strong>signed staging deploy</strong> renders the consumer POMs (Maven 4’s model-4.0.0 transformation; the internal <code>-build.pom</code> is pruned from the bundle);</li>
   <li>the <strong>generated-BOM swap</strong> replaces the stub <code>ike-bom</code> POM with the real generated one — resolved <code>&lt;dependencyManagement&gt;</code>, license, developer, and SCM metadata — re-signs it, and verifies the result;</li>
-  <li><strong>JReleaser</strong> validates the bundle with <code>applyMavenCentralRules</code> and uploads. The default asynchronous path renders a version-pinned script that runs <a href="https://ike.network/ike-tooling/latest/ike-maven-plugin/index.html#central-stage"><code>ike:central-stage</code></a>, so the staging logic is always the releasing plugin’s own, never a stale pin’s.</li>
+  <li><strong>JReleaser</strong> validates the bundle with <code>applyMavenCentralRules</code> and uploads. The default asynchronous path renders a version-pinned script that runs <code>ike:central-stage</code>, so the staging logic is always the releasing plugin’s own, never a stale pin’s.</li>
  </ul>
- <p><strong>GitHub</strong> — the tag and <code>main</code> are pushed, and a GitHub Release is created whose body comes from the release-notes machinery (<a href="https://ike.network/ike-tooling/latest/ike-maven-plugin/index.html#release-goals"><code>ike:release-changelog</code></a>): entries derived from commit <code>Refs:</code>/<code>Fixes:</code> trailers and the release milestone, so the human-readable "what changed" is generated, not hand-written.</p>
+ <p><strong>GitHub</strong> — the tag and <code>main</code> are pushed, and a GitHub Release is created whose body comes from the release-notes machinery (<code>ike:release-changelog</code>): entries derived from commit <code>Refs:</code>/<code>Fixes:</code> trailers and the release milestone, so the human-readable "what changed" is generated, not hand-written.</p>
  <p><strong>Sites</strong> — the project’s Maven site deploys to its <code>gh-pages</code>, and the organization landing at <a href="https://ike.network/">ike.network</a><sup class="visible-print-inline">[4]</sup> re-registers the project, so published documentation tracks released reality.</p>
  <div>
   <div style="color: #7a2518; margin-bottom: .25em">Where the machinery lives</div>
   <div style="background: #fffef7; border-color: #e0e0dc; border: 1px solid #e6e6e6; box-shadow: 0 1px 4px #e0e0dc; margin-bottom: 1.25em; padding: 1.25em">
-   <p>Phases <code>nexus</code>, <code>central</code>, and <code>finalize</code> under <code>network.ike.plugin.release</code> (<strong>ike-tooling</strong>); <a href="https://ike.network/ike-tooling/latest/ike-maven-plugin/index.html#central-stage"><code>ike:central-stage</code></a> is the version-pinned staging goal the async path invokes. JReleaser and signing configuration are inherited from <a href="https://github.com/IKE-Network/ike-base-parent" class="externalLink"><strong>ike-base-parent</strong></a><sup class="visible-print-inline">[5]</sup> — the Tier-0 parent every foundation repository extends. Signing uses the in-process Bouncy Castle signer with secrets injected via <code>op run</code>; no private key material lives on disk.</p>
+   <p>Phases <code>nexus</code>, <code>central</code>, and <code>finalize</code> under <code>network.ike.plugin.release</code> (<strong>ike-tooling</strong>); <code>ike:central-stage</code> is the version-pinned staging goal the async path invokes. JReleaser and signing configuration are inherited from <a href="https://github.com/IKE-Network/ike-base-parent" class="externalLink"><strong>ike-base-parent</strong></a><sup class="visible-print-inline">[5]</sup> — the Tier-0 parent every foundation repository extends. Signing uses the in-process Bouncy Castle signer with secrets injected via <code>op run</code>; no private key material lives on disk.</p>
   </div>
  </div>
 </div>
 <div>
  <h2 id="stage-3--the-cascade"><a href="#stage-3--the-cascade"></a><a id="stage-3-the-cascade"></a>Stage 3 — The cascade</h2>
  <p>A foundation release rarely travels alone: downstream repositories pin their upstream versions explicitly (property-indirected pins, moved deliberately — releases <strong>roll forward</strong>, never republish). Two mechanisms carry a change through the graph:</p>
- <p><strong>Locally</strong>, <a href="https://ike.network/ike-tooling/latest/ike-maven-plugin/index.html#release-cascade"><code>ike:release-cascade</code></a> releases the foundation in dependency order from one command, repinning as it goes.</p>
+ <p><strong>Locally</strong>, <code>ike:release-cascade</code> releases the foundation in dependency order from one command, repinning as it goes.</p>
  <p><strong>On CI</strong>, TeamCity project <strong>IkeFoundation</strong> holds seven release configurations on one uniform template (<code>./mvnw -B -ntp ike:release-publish</code>), pinned to agent <code>kec</code> — the signing identity. Finish-build triggers chain them:</p>
  <div>
   <pre copy-to-clipboard="">BaseParentRelease (manual apex — no trigger)
@@ -337,7 +335,7 @@ op run --env-file ~/.config/ike/release.env -- ./mvnw ike:release-publish -B</co
   <div style="color: #7a2518; margin-bottom: .25em">Where the machinery lives</div>
   <div style="background: #fffef7; border-color: #e0e0dc; border: 1px solid #e6e6e6; box-shadow: 0 1px 4px #e0e0dc; margin-bottom: 1.25em; padding: 1.25em">
    <ul>
-    <li><code>IkeReleaseCascadeMojo</code> (<a href="https://ike.network/ike-tooling/latest/ike-maven-plugin/index.html#release-cascade"><code>ike:release-cascade</code></a>) in <strong>ike-tooling</strong> — the local dependency-ordered cascade.</li>
+    <li><code>IkeReleaseCascadeMojo</code> (<code>ike:release-cascade</code>) in <strong>ike-tooling</strong> — the local dependency-ordered cascade.</li>
     <li>TeamCity configuration (Kotlin DSL) and <code>notify-zulip.sh</code> in <a href="https://github.com/IKE-Network/ike-ci" class="externalLink"><strong>ike-ci</strong></a><sup class="visible-print-inline">[6]</sup> (<code>.teamcity/</code>); the release configs regenerate from <code>scratch/tc/create-foundation-release-configs.py</code>.</li>
     <li>The operator-facing CI topology and REST trigger recipes are documented in <code>release-operations.adoc</code> in <strong>ike-infrastructure</strong>.</li>
    </ul>
@@ -406,7 +404,7 @@ op run --env-file ~/.config/ike/release.env -- ./mvnw ike:release-publish -B</co
 								<li>[7] https://github.com/IKE-Network/ike-platform</li>
 								</ul>
 							</div>
-<div class="date">Date: <strong>2026-08-22 21:24:05 -0700</strong></div>
+<div class="date">Date: <strong>2026-08-22 21:25:34 -0700</strong></div>
 						</div>
 						</div>
 					</div>
@@ -598,11 +596,6 @@ angular.module("sentry.site").constant("SITE_MENU", [
 	parents: [{ title: "Examples" }]
 },
 {
-	path: "ike-lease/",
-	title: "ike-lease",
-	parents: [{ title: "Examples" }]
-},
-{
 	path: "ike-network-site/",
 	title: "ike-network-site",
 	parents: [{ title: "Examples" }]
@@ -670,11 +663,6 @@ angular.module("sentry.site").constant("SITE_MENU", [
 {
 	path: "https://github.com/IKE-Network/hl7-ig-corpus-example",
 	title: "hl7-ig-corpus-example",
-	parents: [{ title: "Source" }]
-},
-{
-	path: "https://github.com/IKE-Network/ike-lease",
-	title: "ike-lease",
 	parents: [{ title: "Source" }]
 },
 {
