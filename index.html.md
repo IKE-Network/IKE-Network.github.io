@@ -169,14 +169,23 @@ Worked example of the corpus-example pattern — multi-module documentation proj
 - us-core
 - cross-ig-overlap
 
+## [#ike-knowledge-provider](#ike-knowledge-provider)IKE Knowledge Provider
+
+Chronology-store implementation of the IKE knowledge-pipeline SPI: ServiceLoader providers for export, assembly, bindings, and verification, composing the engine’s capability libraries behind the stable IKE contract.
+
+| Version | 6 |
+| --- | --- |
+| Site | [ike.network/ike-knowledge-provider](https://ike.network/ike-knowledge-provider/)[28] |
+| GitHub | [IKE-Network/ike-knowledge-provider](https://github.com/IKE-Network/ike-knowledge-provider)[29] |
+
 ## [#ike-working-set-leases](#ike-working-set-leases)IKE Working-Set Leases
 
 Single-writer working-set leases across Syncthing-paired machines: the protocol and materializer core (a plain-Java library the ws: goals can consume), and the IntelliJ enforcement plugin that hosts it at the open gesture. Split per IKE-Network/ike-issues#1067.
 
 | Version | 5 |
 | --- | --- |
-| Site | [ike.network/ike-lease-plugin](https://ike.network/ike-lease-plugin/)[28] |
-| GitHub | [IKE-Network/ike-lease-plugin](https://github.com/IKE-Network/ike-lease-plugin)[29] |
+| Site | [ike.network/ike-lease-plugin](https://ike.network/ike-lease-plugin/)[30] |
+| GitHub | [IKE-Network/ike-lease-plugin](https://github.com/IKE-Network/ike-lease-plugin)[31] |
 
 #### [#modules_6](#modules_6)Modules
 
@@ -189,8 +198,8 @@ Organization landing page for IKE Network projects.
 
 | Version | 2 |
 | --- | --- |
-| Site | [ike.network/ike-network-site](https://ike.network/ike-network-site/)[30] |
-| GitHub | [IKE-Network/ike-network-site](https://github.com/IKE-Network/ike-network-site)[31] |
+| Site | [ike.network/ike-network-site](https://ike.network/ike-network-site/)[32] |
+| GitHub | [IKE-Network/ike-network-site](https://github.com/IKE-Network/ike-network-site)[33] |
 
 ## [#ike-integration-tests-example](#ike-integration-tests-example)IKE Integration Tests Example
 
@@ -198,8 +207,8 @@ End-to-end smoke tests that exercise the IKE Network release cascade as external
 
 | Version | 26 |
 | --- | --- |
-| Site | [ike.network/integration-tests-example](https://ike.network/integration-tests-example/)[32] |
-| GitHub | [IKE-Network/integration-tests-example](https://github.com/IKE-Network/integration-tests-example)[33] |
+| Site | [ike.network/integration-tests-example](https://ike.network/integration-tests-example/)[34] |
+| GitHub | [IKE-Network/integration-tests-example](https://github.com/IKE-Network/integration-tests-example)[35] |
 
 ## [#ike-project-example](#ike-project-example)IKE Project Example
 
@@ -207,15 +216,15 @@ Example Java project demonstrating IKE documentation pipeline integration with J
 
 | Version | 34 |
 | --- | --- |
-| Site | [ike.network/project-example](https://ike.network/project-example/)[34] |
-| GitHub | [IKE-Network/project-example](https://github.com/IKE-Network/project-example)[35] |
+| Site | [ike.network/project-example](https://ike.network/project-example/)[36] |
+| GitHub | [IKE-Network/project-example](https://github.com/IKE-Network/project-example)[37] |
 
 ## [#ike-workspace-reactor-example](#ike-workspace-reactor-example)IKE Workspace Reactor Example
 
 | Version | 25 |
 | --- | --- |
-| Site | [ike.network/workspace-reactor-example](https://ike.network/workspace-reactor-example/)[36] |
-| GitHub | [IKE-Network/workspace-reactor-example](https://github.com/IKE-Network/workspace-reactor-example)[37] |
+| Site | [ike.network/workspace-reactor-example](https://ike.network/workspace-reactor-example/)[38] |
+| GitHub | [IKE-Network/workspace-reactor-example](https://github.com/IKE-Network/workspace-reactor-example)[39] |
 
 #### [#modules_7](#modules_7)Modules
 
