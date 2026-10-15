@@ -46,7 +46,7 @@ Shared, enforced-zero-dependency value types for the IKE Network: ConstantBacked
 
 Workspace management, release orchestration, gitflow workflows, and build-time utilities for IKE Network projects.
 
-| Version | 265 |
+| Version | 266 |
 | --- | --- |
 | Site | [ike.network/ike-tooling](https://ike.network/ike-tooling/)[8] |
 | GitHub | [IKE-Network/ike-tooling](https://github.com/IKE-Network/ike-tooling)[9] |
