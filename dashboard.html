@@ -227,25 +227,43 @@
 <p>The IKE Dashboard is one window for working with Komet. It keeps Komet versions installed side by side and current, keeps the knowledge bases in <code>~/Solor</code> current, and opens any knowledge base in any Komet version as an independent application. Its first screen, <strong>Notices</strong>, lists what needs attention, each with one action: a newer build of a knowledge base, work not yet committed, a newer Komet.</p>
 <div>
  <h2 id="download"><a href="#download"></a><a id="download"></a>Download</h2>
- <p><a href="https://github.com/IKE-Network/ike-dashboard/releases/latest/download/IKE-Dashboard-osx-aarch64.zip" class="externalLink"><strong>Download the IKE Dashboard</strong></a><sup class="visible-print-inline">[1]</sup> for a Mac with Apple silicon.</p>
- <p>The link always fetches the newest version. The application is signed with IKE’s Developer ID and notarized by Apple, so macOS opens it without warnings.</p>
+ <ul>
+  <li><a href="https://github.com/IKE-Network/ike-dashboard/releases/latest/download/IKE-Dashboard-osx-aarch64.pkg" class="externalLink"><strong>Download the IKE Dashboard for Mac</strong></a><sup class="visible-print-inline">[1]</sup> (Apple silicon)</li>
+  <li><a href="https://github.com/IKE-Network/ike-dashboard/releases/latest/download/IKE-Dashboard-windows-x86_64.msi" class="externalLink"><strong>Download the IKE Dashboard for Windows</strong></a><sup class="visible-print-inline">[2]</sup> (64-bit)</li>
+ </ul>
+ <p>Each link always fetches the newest version. Both are installers, as Komet’s are.</p>
 </div>
 <div>
  <h2 id="install"><a href="#install"></a><a id="install"></a>Install</h2>
- <ol style="list-style-type: decimal;">
-  <li>Open the downloaded <code>IKE-Dashboard-osx-aarch64.zip</code> to unzip it.</li>
-  <li>Move <strong>IKE Dashboard.app</strong> into your Applications folder.</li>
-  <li>Open it from there.</li>
- </ol>
+ <div>
+  <h3 id="mac"><a href="#mac"></a><a id="mac"></a>Mac</h3>
+  <ol style="list-style-type: decimal;">
+   <li>Open the downloaded <code>IKE-Dashboard-osx-aarch64.pkg</code>.</li>
+   <li>Follow the installer. It puts <strong>IKE Dashboard</strong> in your Applications folder.</li>
+   <li>Open it from there.</li>
+  </ol>
+  <p>The installer is signed with IKE’s Developer ID and notarized by Apple, so macOS opens it without warnings.</p>
+ </div>
+ <div>
+  <h3 id="windows"><a href="#windows"></a><a id="windows"></a>Windows</h3>
+  <ol style="list-style-type: decimal;">
+   <li>Open the downloaded <code>IKE-Dashboard-windows-x86_64.msi</code>.</li>
+   <li>Follow the installer. It installs the dashboard for you alone, with no administrator password, and adds <strong>IKE Dashboard</strong> to the Start menu.</li>
+   <li>Open it from the Start menu.</li>
+  </ol>
+  <p>The Windows installer is not signed yet, so Windows SmartScreen may say <em>Windows protected your PC</em>. Choose <strong>More info</strong>, then <strong>Run anyway</strong>.</p>
+ </div>
+</div>
+<div>
+ <h2 id="updates"><a href="#updates"></a><a id="updates"></a>Updates</h2>
  <p>From then on the dashboard updates itself. When a newer version is published, the Notices screen offers it; <strong>Update and restart</strong> downloads it, checks it, and restarts the dashboard on it. Komets that are running are not affected.</p>
- <p>If you open the dashboard straight from the Downloads folder, macOS runs it from a read-only copy, and it cannot update itself there. Its first notice then offers to move it into your Applications folder.</p>
 </div>
 <div>
  <h2 id="more"><a href="#more"></a><a id="more"></a>More</h2>
  <ul>
-  <li><a href="https://github.com/IKE-Network/ike-dashboard/releases" class="externalLink">Every release</a><sup class="visible-print-inline">[2]</sup>, with its notes and checksum</li>
-  <li><a href="https://github.com/IKE-Network/ike-dashboard" class="externalLink">Source and documentation</a><sup class="visible-print-inline">[3]</sup></li>
-  <li><a href="https://github.com/IKE-Network/ike-issues/issues" class="externalLink">Report a problem</a><sup class="visible-print-inline">[4]</sup></li>
+  <li><a href="https://github.com/IKE-Network/ike-dashboard/releases" class="externalLink">Every release</a><sup class="visible-print-inline">[3]</sup>, with its notes and checksums</li>
+  <li><a href="https://github.com/IKE-Network/ike-dashboard" class="externalLink">Source and documentation</a><sup class="visible-print-inline">[4]</sup></li>
+  <li><a href="https://github.com/IKE-Network/ike-issues/issues" class="externalLink">Report a problem</a><sup class="visible-print-inline">[5]</sup></li>
  </ul>
 </div>
 
@@ -272,13 +290,14 @@
 <div class="footnotes visible-print-block">
 								Links:
 								<ul class="list-unstyled">
-								<li>[1] https://github.com/IKE-Network/ike-dashboard/releases/latest/download/IKE-Dashboard-osx-aarch64.zip</li>
-								<li>[2] https://github.com/IKE-Network/ike-dashboard/releases</li>
-								<li>[3] https://github.com/IKE-Network/ike-dashboard</li>
-								<li>[4] https://github.com/IKE-Network/ike-issues/issues</li>
+								<li>[1] https://github.com/IKE-Network/ike-dashboard/releases/latest/download/IKE-Dashboard-osx-aarch64.pkg</li>
+								<li>[2] https://github.com/IKE-Network/ike-dashboard/releases/latest/download/IKE-Dashboard-windows-x86_64.msi</li>
+								<li>[3] https://github.com/IKE-Network/ike-dashboard/releases</li>
+								<li>[4] https://github.com/IKE-Network/ike-dashboard</li>
+								<li>[5] https://github.com/IKE-Network/ike-issues/issues</li>
 								</ul>
 							</div>
-<div class="date">Date: <strong>2026-10-26 16:04:42 -0700</strong></div>
+<div class="date">Date: <strong>2026-10-26 16:44:28 -0700</strong></div>
 						</div>
 						</div>
 					</div>
