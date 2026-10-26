@@ -140,6 +140,7 @@
 <ul class="nav nav-pills nav-stacked animate">
 <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
 <li><a href="brand.html"><i class="fas fa-file-alt"></i> Powered by IKE</a></li>
+<li><a href="dashboard.html"><i class="fas fa-file-alt"></i> IKE Dashboard</a></li>
 <li class="active"><a href="release-pipeline.html" ng-click="hideSubItems = !hideSubItems"><i class="fas fa-file-alt"></i> Release Pipeline</a></li>
 <li><a href="checkpoint-pipeline.html"><i class="fas fa-file-alt"></i> Checkpoint Pipeline</a></li>
 </ul>
@@ -408,7 +409,7 @@ op run --env-file ~/.config/ike/release.env -- ./mvnw ike:release-publish -B</co
 								<li>[7] https://github.com/IKE-Network/ike-platform</li>
 								</ul>
 							</div>
-<div class="date">Date: <strong>2026-10-26 09:37:15 -0700</strong></div>
+<div class="date">Date: <strong>2026-10-26 14:05:20 -0700</strong></div>
 						</div>
 						</div>
 					</div>
@@ -537,6 +538,11 @@ angular.module("sentry.site").constant("SITE_MENU", [
 {
 	path: "brand.html",
 	title: "Powered by IKE",
+	parents: [{ title: "IKE Network" }]
+},
+{
+	path: "dashboard.html",
+	title: "IKE Dashboard",
 	parents: [{ title: "IKE Network" }]
 },
 {
